@@ -1,12 +1,20 @@
+import About from "@/components/About/About";
 import Contacts from "@/components/Contacts/Contacts";
 import Hero from "@/components/Hero/Hero";
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <div className={styles.wrapper}>
+        <Hero />
+        {/* <About /> */}
+      </div>
+
+      <div className={styles.wrapper}>
+        <Hero />
+        <About />
+      </div>
       {/* <Contacts /> */}
     </>
   );

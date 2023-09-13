@@ -1,10 +1,17 @@
+import { Caveat } from "next/font/google";
 import React from "react";
-import styles from "./Hero.module.scss";
-const Hero = () => {
+import styles from "./About.module.scss";
+
+const caveat = Caveat({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600", "700"],
+  // display: "swap",
+});
+
+const About = () => {
   return (
-    <section className={styles.hero}>
-      <h1>MAGIC STAR</h1>
-      <p className={styles.description}>
+    <section className={styles.about}>
+      <p className={`${caveat.className} ${styles.description}`}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aut vero
         iure magni fugiat voluptas quibusdam eligendi. Debitis perspiciatis
         harum nesciunt, ratione nostrum ad qui doloribus voluptas est
@@ -16,4 +23,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default About;

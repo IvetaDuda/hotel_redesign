@@ -8,14 +8,12 @@ export default function Home() {
     <>
       <div className={styles.wrapper}>
         <Hero />
-        {/* <About /> */}
       </div>
 
       <div className={styles.wrapper}>
-        <Hero />
         <About />
+        <Contacts />
       </div>
-      {/* <Contacts /> */}
     </>
   );
 }

@@ -1,0 +1,32 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  /* background-position: center;
+  background-size: cover; */
+  width: 300px;
+  height: 300px;
+  /* border: 8px solid rgb(12, 95, 84); */
+  border-radius: 12px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination-bullet,
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ddd;
+}
+
+.swiper-pagination-bullet-active {
+  scale: 1.1;
+  background-color: #ddd;
+  transform: scale(1.1);
+  filter: brightness(1.09);
+}

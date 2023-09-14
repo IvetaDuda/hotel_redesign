@@ -5,12 +5,11 @@ const Hero = () => {
     <section className={styles.hero}>
       <h1>MAGIC STAR</h1>
       <p className={styles.description}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aut vero
-        iure magni fugiat voluptas quibusdam eligendi. Debitis perspiciatis
-        harum nesciunt, ratione nostrum ad qui doloribus voluptas est
-        perferendis impedit inventore rerum tempora repellendus tempore
-        consequuntur deleniti tenetur assumenda non praesentium doloremque
-        reiciendis ab fugiat! Perferendis neque sit quidem soluta!
+        Дозвольте собі відпочинок у спокої та гармонії серед захоплюючого
+        гірського пейзажу, де кожна відпустка - це незабутня подорожжю до
+        природи. <br /> В нашому готелі ви зможете насолодитися гірськими
+        екскурсіями, лижним відпочинком та багатьма іншими активностями, які
+        надихнуть вас.
       </p>
     </section>
   );

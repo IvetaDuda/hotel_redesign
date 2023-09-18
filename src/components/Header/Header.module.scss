@@ -8,4 +8,39 @@
   padding: 12px;
   text-shadow: var(--text_shadow);
   border-bottom: 1px solid var(--border_semi_white);
+  font-size: 12px;
+  justify-content: space-between;
+  & .logo {
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  & .headerContacts {
+    gap: 4px;
+    // font-size: 12px;
+  }
+  @media screen and (min-width: 425px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transform: translateX(-200%);
+  position: absolute;
+
+  & li:hover,
+  & li:focus {
+    text-decoration: underline;
+  }
+  @media screen and (min-width: 425px) {
+    flex-direction: row;
+    transform: translateX(0%);
+    position: static;
+  }
 }

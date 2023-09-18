@@ -6,7 +6,7 @@ import { fasilities } from "../../data/facilities";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-console.log(fasilities);
+// console.log(fasilities);
 
 import {
   Navigation,

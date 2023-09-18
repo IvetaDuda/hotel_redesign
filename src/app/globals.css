@@ -6,6 +6,8 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace; */
   --color_bg: #000;
   --min_width: "300px";
+  --text_color: white;
+  --text_shadow: 0px 1px 2px black;
 }
 
 * {
@@ -20,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: var(--text_color);
 }
 
 main {
@@ -34,6 +36,14 @@ section {
   align-items: center;
   justify-content: center;
   padding: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
 }
 
 /* @media screen and (min-width: 425px) {

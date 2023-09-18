@@ -8,6 +8,7 @@
   --min_width: "300px";
   --text_color: white;
   --text_shadow: 0px 1px 2px black;
+  --border_semi_white: rgba(255, 255, 255, 0.3);
 }
 
 * {

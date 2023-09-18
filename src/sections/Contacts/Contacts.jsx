@@ -5,7 +5,7 @@ import styles from "./Contacts.module.scss";
 import Form from "@/components/Form/Form";
 const Contacts = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.contacts}>
       <div className={styles.contactsWrapper}>
         <div className={styles.contact}>
           <AiFillMail />

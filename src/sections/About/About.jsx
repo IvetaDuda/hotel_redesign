@@ -11,10 +11,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
   Pagination,
-  Mousewheel,
+  // Mousewheel,
   Keyboard,
   EffectCoverflow,
 } from "swiper/modules";
+
+// white 40%,
+// rgb(80, 84, 47) 10%
 
 // Import Swiper styles
 import "swiper/css";
@@ -34,7 +37,7 @@ const About = () => {
         pagination={{
           clickable: true,
         }}
-        mousewheel={true}
+        // mousewheel={true}
         keyboard={true}
         effect={"coverflow"}
         grabCursor={true}
@@ -50,7 +53,7 @@ const About = () => {
         modules={[
           Navigation,
           Pagination,
-          Mousewheel,
+          // Mousewheel,
           Keyboard,
           EffectCoverflow,
         ]}

@@ -3,7 +3,7 @@ import styles from "./Hero.module.scss";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <h1>MAGIC STAR</h1>
+      <h1>MAGIC PLACE</h1>
       <p className={styles.description}>
         Дозвольте собі відпочинок у спокої та гармонії серед захоплюючого
         гірського пейзажу, де кожна відпустка - це незабутня подорожжю до

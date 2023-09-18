@@ -5,6 +5,51 @@
   justify-content: center;
   //   position: fixed;
   //   bottom: 0;
-  padding: 8px;
-  text-shadow: 0px 1px 2px black;
+  padding: 12px;
+  text-shadow: var(--text_shadow);
+  border-top: 1px solid var(--border_semi_white);
+  & a {
+    font-family: Caveat;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    & a {
+      scale: 1.05;
+      // filter: brightness(2);
+      background-image: linear-gradient(
+        30deg,
+        #fffffe 70%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      // text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 0.5s linear both;
+    }
+  }
 }
+
+@keyframes textclip {
+  to {
+    background-position: -200% center;
+    filter: brightness(2);
+  }
+}
+
+// background-image: linear-gradient(
+//   45deg,
+//   #231557 0%,
+//   #44107a 29%,
+//   #ff1361 67%,
+//   #fff800 100%
+// );
+
+// rgb(117, 117, 117)

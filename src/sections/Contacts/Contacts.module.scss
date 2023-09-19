@@ -3,6 +3,12 @@
   gap: 40px;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
+
+  @media screen and (orientation: landscape) and (max-height: 380px) {
+    scale: 0.8;
+    margin-bottom: 32px;
+  }
+
   @media screen and (min-width: 768px) {
     gap: 64px;
     flex-direction: row;

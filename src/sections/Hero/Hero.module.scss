@@ -15,6 +15,14 @@
       margin-bottom: 32px;
     }
   }
+
+  @media screen and (orientation: landscape) and (max-height: 420px) {
+    padding-top: 72px;
+
+    & h1 {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .description {

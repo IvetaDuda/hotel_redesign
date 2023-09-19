@@ -23,6 +23,11 @@
       width: auto !important;
       height: 100% !important;
     }
+
+    @media screen and (orientation: landscape) and (max-height: 600px) {
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
 }
 

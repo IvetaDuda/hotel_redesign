@@ -32,7 +32,7 @@ const About = () => {
       <h2>Вас чекає:</h2>
       <Swiper
         // cssMode={true}
-        // loop={true}
+        loop={true}
         navigation={true}
         pagination={{
           clickable: true,

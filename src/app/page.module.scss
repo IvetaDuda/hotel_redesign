@@ -15,17 +15,24 @@
   overflow-y: scroll;
   height: 100vh;
 
-  &:nth-child(1) {
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url("/heroImg.jpeg");
-  }
-  &:nth-child(2) {
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url("/lake.jpeg");
-    justify-content: space-between;
-    gap: 64px;
-    // @media screen and (min-width: var(--tablet)) {
-    //   background-color: red;
-    // }
-  }
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("/lake.jpeg");
+  justify-content: space-between;
+  gap: 64px;
+
+  // &:nth-child(1) {
+  //   // background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  //   //   url("/heroImg.jpeg");
+  //   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  //     url("/HeroFigma.webp");
+  // }
+  // &:nth-child(2) {
+  //   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  //     url("/lake.jpeg");
+  //   justify-content: space-between;
+  //   gap: 64px;
+  //   // @media screen and (min-width: var(--tablet)) {
+  //   //   background-color: red;
+  //   // }
+  // }
 }

@@ -7,11 +7,12 @@ import styles from "./page.module.scss";
 export default function Home() {
   return (
     <>
+      {/* <div className={styles.wrapper}> */}
+      <Hero />
+      {/* </div> */}
+      <About />
       <div className={styles.wrapper}>
-        <Hero />
-      </div>
-      <div className={styles.wrapper}>
-        <About />
+        {/* <About /> */}
         <Contacts />
         <Footer />
       </div>

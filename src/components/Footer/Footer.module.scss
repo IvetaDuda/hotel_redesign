@@ -8,6 +8,9 @@
   padding: 12px;
   text-shadow: var(--text_shadow);
   border-top: 1px solid var(--border_semi_white);
+
+  position: absolute;
+  bottom: 0;
   & a {
     font-family: Caveat;
     font-weight: 100;

@@ -38,3 +38,19 @@
   //   // }
   // }
 }
+
+.imgContainer {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+
+  & img {
+    width: auto !important;
+    height: 100%;
+    @media screen and (orientation: landscape) {
+      width: 100%;
+      height: auto !important;
+    }
+  }
+}

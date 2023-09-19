@@ -15,6 +15,9 @@ export default function Home() {
       <Hero />
       <About />
       <div className={styles.wrapper}>
+        {/* <div className={styles.imgContainer2}>
+          <Image src="/lake.jpeg" fill={true} />
+        </div> */}
         <Contacts />
         <Footer />
       </div>

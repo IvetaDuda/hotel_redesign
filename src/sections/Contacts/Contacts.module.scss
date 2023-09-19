@@ -2,6 +2,7 @@
   // width: fit-content;
   gap: 40px;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
   @media screen and (min-width: 768px) {
     gap: 64px;
     flex-direction: row;

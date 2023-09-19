@@ -26,6 +26,8 @@
   justify-content: center;
   overflow-y: scroll;
   z-index: 100;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url("/lake.jpeg");
@@ -35,21 +37,20 @@
   background-position: bottom;
   gap: 64px;
   position: relative;
-  // z-index: 100;
-
-  // @media screen and (orientation: landscape) {
-  //   background-size: auto 100%;
-  // }
 }
 
-.imgContainer2 {
-  // position: fixed;
-  // bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: antiquewhite;
-  // & img {
-  //   width: 100% !important;
-  //   height: 100% !important;
-  // }
-}
+// .imgContainer2 {
+//   width: 100vw;
+//   height: 100vh;
+//   position: sticky;
+//   & .ImgBottom {
+//     width: auto !important;
+//     height: 100%;
+//     // top: auto !important;
+
+//     @media screen and (orientation: landscape) {
+//       width: 100% !important;
+//       height: auto;
+//     }
+//   }
+// }

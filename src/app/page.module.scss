@@ -19,12 +19,12 @@
       width: 100%;
       height: auto !important;
     }
-    @media screen and (orientation: landscape) and (min-height: 730px) {
-      width: auto !important;
-      height: 100% !important;
-    }
+    // @media screen and (orientation: landscape) and (min-height: 730px) {
+    //   width: auto !important;
+    //   height: 100% !important;
+    // }
 
-    @media screen and (orientation: landscape) and (max-height: 600px) {
+    @media screen and (orientation: landscape) and (max-height: 800px) {
       width: 100% !important;
       height: 100% !important;
     }

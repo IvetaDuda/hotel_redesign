@@ -49,9 +49,9 @@ const About = () => {
           slideShadows: true,
         }}
         spaceBetween={30}
-        speed={1000}
+        speed={2000}
         autoplay={{
-          delay: 3000,
+          delay: 2000,
           // speed: 6000,
           disableOnInteraction: false,
         }}

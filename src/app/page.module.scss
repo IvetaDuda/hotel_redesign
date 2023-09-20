@@ -66,13 +66,13 @@
   height: 300px;
   z-index: 5;
   position: absolute;
-  transform: translate(-200%, 0%);
-  animation: clouds 100s linear infinite;
+  transform: translate(-200%, -200%);
+  animation: clouds 500s linear infinite;
   scale: 0.5;
 }
 
 @keyframes clouds {
   to {
-    transform: translate(-1000%, -500%);
+    transform: translate(-1000%, -2000%);
   }
 }

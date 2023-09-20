@@ -9,16 +9,17 @@
   height: 100%;
   z-index: -1;
   position: fixed;
+  transition-duration: 3s;
 
   & img {
     width: auto !important;
     height: 100%;
-    top: auto !important;
+    // bottom: auto !important;
 
-    @media screen and (orientation: landscape) {
-      width: 100%;
-      height: auto !important;
-    }
+    // @media screen and (orientation: landscape) {
+    //   width: 100%;
+    //   height: auto !important;
+    // }
     // @media screen and (orientation: landscape) and (min-height: 730px) {
     //   width: auto !important;
     //   height: 100% !important;

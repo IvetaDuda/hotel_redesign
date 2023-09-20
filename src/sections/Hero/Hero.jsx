@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Hero.module.scss";
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       <h1>MAGIC PLACE</h1>
       <p className={styles.description}>
         Дозвольте собі відпочинок у спокої та гармонії серед захоплюючого

@@ -14,10 +14,8 @@ import {
   // Mousewheel,
   Keyboard,
   EffectCoverflow,
+  Autoplay,
 } from "swiper/modules";
-
-// white 40%,
-// rgb(80, 84, 47) 10%
 
 // Import Swiper styles
 import "swiper/css";
@@ -50,12 +48,20 @@ const About = () => {
           modifier: 4.5,
           slideShadows: true,
         }}
+        spaceBetween={30}
+        speed={1000}
+        autoplay={{
+          delay: 3000,
+          // speed: 6000,
+          disableOnInteraction: false,
+        }}
         modules={[
           Navigation,
           Pagination,
           // Mousewheel,
           Keyboard,
           EffectCoverflow,
+          Autoplay,
         ]}
         className={styles.mySwiper}
       >
@@ -75,15 +81,3 @@ const About = () => {
 };
 
 export default About;
-
-{
-  /* <SwiperSlide>Slide 1</SwiperSlide>
-<SwiperSlide>Slide 2</SwiperSlide>
-<SwiperSlide>Slide 3</SwiperSlide>
-<SwiperSlide>Slide 4</SwiperSlide>
-<SwiperSlide>Slide 5</SwiperSlide>
-<SwiperSlide>Slide 6</SwiperSlide>
-<SwiperSlide>Slide 7</SwiperSlide>
-<SwiperSlide>Slide 8</SwiperSlide>
-<SwiperSlide>Slide 9</SwiperSlide> */
-}

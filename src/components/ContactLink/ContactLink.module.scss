@@ -1,0 +1,23 @@
+.contactContainer {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  z-index: 100;
+}
+
+.svg {
+  width: 30px;
+  height: 30px;
+}
+
+.svgEmail {
+  fill: transparent;
+  stroke: #ffffff;
+}
+
+.svgPhone {
+  fill: #ffffff;
+}

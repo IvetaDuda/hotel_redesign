@@ -26,10 +26,10 @@
     text-shadow: var(--text_shadow);
   }
 
-  &:hover,
-  &:focus {
-    & a {
-      text-decoration: underline;
-    }
-  }
+  // &:hover,
+  // &:focus {
+  //   & a {
+  //     text-decoration: underline;
+  //   }
+  // }
 }

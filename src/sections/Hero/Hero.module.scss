@@ -1,32 +1,38 @@
 .hero {
   color: white;
-
+  width: 100%;
   height: 100vh;
   text-align: center;
+
   text-shadow: var(--text_shadow);
+  padding-top: 10%;
 
-  & h1 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 24px;
-    opacity: 0;
-    scale: 0.8;
-    filter: blur(1px);
-    text-shadow: 0px 0px 1px white, 0px 0px 3px white;
-    animation: title 2s 0.5s linear forwards;
-
-    @media screen and (min-width: 425px) {
-      font-size: 32px;
-      margin-bottom: 32px;
-    }
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('/jonathan-ansel-moy-de-vitry-Fvb8EH50PxQ-unsplash.jpg');
+  background-position: bottom left;
+  background-size: cover;
 
   @media screen and (orientation: landscape) and (max-height: 420px) {
     padding-top: 72px;
 
-    & h1 {
+    .heroTitle {
       margin-bottom: 12px;
     }
+  }
+}
+
+.heroTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  opacity: 0;
+  scale: 0.8;
+  filter: blur(1px);
+  animation: title 2s 0.5s linear forwards;
+
+  @media screen and (min-width: 425px) {
+    font-size: 48px;
+    margin-bottom: 42px;
   }
 }
 
@@ -35,20 +41,19 @@
     opacity: 1;
     scale: 1;
     filter: blur(0);
-    text-shadow: var(--text_shadow);
+    // text-shadow: var(--text_shadow);
   }
 }
 
 .description {
-  font-family: Caveat;
   font-size: 12px;
-  font-weight: 100;
-  width: 80%;
+  font-style: italic;
+  width: 60%;
   opacity: 0;
   scale: 1.1;
   animation: description 3s 0.5s linear forwards;
   @media screen and (min-width: 768px) {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 @keyframes description {

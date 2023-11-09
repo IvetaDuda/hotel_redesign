@@ -1,11 +1,10 @@
 .about {
-  background-color: white;
+  background-color: #ede7db;
+  // background-color: white;
   padding: 0;
   & h2 {
-    font-family: Caveat;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
-    font-style: italic;
-    color: black;
+    color: rgb(45, 44, 44);
   }
 }

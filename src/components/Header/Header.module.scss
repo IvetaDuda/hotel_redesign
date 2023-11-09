@@ -2,24 +2,23 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: fixed;
+  // justify-content: center;
+  position: absolute;
+  // position: fixed;
   top: 0;
-  padding: 12px;
+  padding: 15px;
   text-shadow: var(--text_shadow);
-  border-bottom: 1px solid var(--border_semi_white);
   font-size: 12px;
-  justify-content: space-between;
   z-index: 10;
-
-  & .headerContacts {
-    gap: 4px;
-    // font-size: 12px;
-  }
+  column-gap: 30px;
   @media screen and (min-width: 425px) {
-    justify-content: space-between;
   }
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
+}
+.headerContacts {
+  gap: 4px;
+  margin-left: auto;
+  // font-size: 12px;
 }

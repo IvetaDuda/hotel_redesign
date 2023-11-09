@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React from "react";
-import styles from "./HeaderLinks.module.scss";
-import Link from "next/link";
-import { handleScroll } from "@/helpers/handleScroll";
-import { headerLinks } from "@/data/headerLinks";
-import { usePathname } from "next/navigation";
+import React from 'react';
+import styles from './HeaderLinks.module.scss';
+import Link from 'next/link';
+import { handleScroll } from '@/helpers/handleScroll';
+import { headerLinks } from '@/data/headerLinks';
+import { usePathname } from 'next/navigation';
 
 const HeaderLinks = () => {
   const pathname = usePathname();
@@ -19,7 +19,9 @@ const HeaderLinks = () => {
             <Link
               href={item.href}
               onClick={handleScroll}
-              className={isActive ? styles.activeLink : " "}
+              className={
+                isActive ? styles.activeLink : ' ' + 'textLinkAnimation'
+              }
             >
               {item.title}
             </Link>

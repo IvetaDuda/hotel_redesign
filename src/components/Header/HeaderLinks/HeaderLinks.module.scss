@@ -1,18 +1,10 @@
 .navLinks {
   display: flex;
-  flex-direction: column;
   gap: 12px;
-  transform: translateX(-200%);
   position: absolute;
 
-  // & li:hover a,
-  // & li:focus a {
-  //   text-decoration: underline;
-  //   text-decoration-thickness: 2px;
-  //   text-underline-offset: 8px;
-  // }
   @media screen and (min-width: 425px) {
-    flex-direction: row;
+    // flex-direction: row;
     transform: translateX(0%);
     position: static;
   }
@@ -21,4 +13,9 @@
 .activeLink {
   color: cadetblue;
   background-color: darkcyan;
+}
+
+.linkTitle {
+  font-weight: 200;
+  font-size: 20px;
 }

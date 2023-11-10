@@ -7,7 +7,7 @@ const BottomSection = () => {
   return (
     <div className={styles.wrapper}>
       <Contacts />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

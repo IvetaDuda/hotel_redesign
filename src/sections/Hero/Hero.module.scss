@@ -7,11 +7,12 @@
   text-shadow: var(--text_shadow);
   padding-top: 10%;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('/jonathan-ansel-moy-de-vitry-Fvb8EH50PxQ-unsplash.jpg');
-  background-position: bottom left;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/welcome-msg-fall-bg.jpg');
+  //  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  // url('/jonathan-ansel-moy-de-vitry-Fvb8EH50PxQ-unsplash.jpg');
+  background-position: center left;
   background-size: cover;
-
   @media screen and (orientation: landscape) and (max-height: 420px) {
     padding-top: 72px;
 
@@ -24,6 +25,7 @@
 .heroTitle {
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 3.2px;
   margin-bottom: 24px;
   opacity: 0;
   scale: 0.8;
@@ -46,14 +48,15 @@
 }
 
 .description {
-  font-size: 12px;
-  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  // font-style: italic;
   width: 60%;
   opacity: 0;
   scale: 1.1;
   animation: description 3s 0.5s linear forwards;
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @keyframes description {

@@ -21,7 +21,7 @@
   align-items: center;
   gap: 16px;
   & svg,
-  & a {
+  & .link {
     color: white;
     text-shadow: var(--text_shadow);
   }
@@ -32,4 +32,9 @@
   //     text-decoration: underline;
   //   }
   // }
+}
+
+.link {
+  font-weight: 200;
+  font-size: 20px;
 }

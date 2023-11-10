@@ -11,6 +11,8 @@
   font-size: 12px;
   z-index: 10;
   column-gap: 30px;
+  // backdrop-filter: sepia(90%);
+  // backdrop-filter: blur(2px);
   @media screen and (min-width: 425px) {
   }
   @media screen and (min-width: 768px) {

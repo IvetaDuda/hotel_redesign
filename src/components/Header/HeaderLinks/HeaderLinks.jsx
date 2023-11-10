@@ -7,11 +7,11 @@ import { handleScroll } from '@/helpers/handleScroll';
 import { headerLinks } from '@/data/headerLinks';
 import { usePathname } from 'next/navigation';
 
-const HeaderLinks = () => {
+const HeaderLinks = ({ costumStyles }) => {
   const pathname = usePathname();
   // console.log(pathname);
   return (
-    <ul className={styles.navLinks}>
+    <ul className={styles.navLinks + ' ' + costumStyles}>
       {headerLinks.map((item) => {
         const isActive = pathname === item.href;
         return (
@@ -23,7 +23,7 @@ const HeaderLinks = () => {
                 isActive ? styles.activeLink : ' ' + 'textLinkAnimation'
               }
             >
-              {item.title}
+              <p className={styles.linkTitle}>{item.title}</p>
             </Link>
           </li>
         );

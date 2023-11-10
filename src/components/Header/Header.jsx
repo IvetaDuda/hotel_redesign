@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import TelEmail from '../TelEmail/TelEmail';
+// import TelEmail from '../TelEmail/TelEmail';
 import HeaderLinks from './HeaderLinks/HeaderLinks';
 import Logo from './Logo/Logo';
 

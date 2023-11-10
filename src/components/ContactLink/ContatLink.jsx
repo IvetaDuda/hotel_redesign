@@ -5,8 +5,8 @@ const ContactLink = () => {
   return (
     <ul className={styles.contactContainer}>
       <li className={styles.contactItem}>
-        <svg className={styles.svg + ' ' + styles.svgEmail}>
-          <use href="sprite.svg#email" />
+        <svg className={styles.svg + ' ' + styles.svgPhone}>
+          <use href="sprite.svg#phone" />
         </svg>
         <a
           href="tel:+380966058605"
@@ -16,8 +16,8 @@ const ContactLink = () => {
         </a>
       </li>
       <li className={styles.contactItem}>
-        <svg className={styles.svg + ' ' + styles.svgPhone}>
-          <use href="sprite.svg#phone" />
+        <svg className={styles.svg + ' ' + styles.svgEmail}>
+          <use href="sprite.svg#email" />
         </svg>
         <a
           href="mailto:inbox.webevery@gmail.com"

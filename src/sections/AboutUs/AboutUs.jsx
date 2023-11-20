@@ -1,20 +1,26 @@
+import { offers } from '@/data/offers';
+import Image from 'next/image';
 import styles from './AboutUs.module.scss';
 
 const AboutUs = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="about">
+      <h2 className={styles.aboutTitle}>Наші послуги</h2>
       <ul className={styles.aboutContainer}>
-        <li className={styles.aboutItem}>
-          <div className={styles.aboutContent}>
-            <h3 className={styles.aboutTitle}>Котеджі</h3>
-            <p className={styles.aboutText}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              necessitatibus a vero odit quod minima atque nemo porro rerum
-              culpa dolores asperiores quasi saepe, aliquam suscipit,
-              consequatur, quisquam veniam ratione!
-            </p>
-          </div>
-        </li>
+        {offers.map(({ id, img, title, text }) => (
+          <li className={styles.aboutItem} key={id}>
+            <div className={styles.imgContsiner}>
+              <Image src={img} fill={true} alt="img" className={styles.img} />
+            </div>
+            <div className={styles.aboutContent}>
+              <h3 className={styles.aboutSubitle}>{title}</h3>
+              <p className={styles.aboutText}>{text}</p>
+              <button type="button" className={styles.aboutBtn}>
+                Детальніше
+              </button>
+            </div>
+          </li>
+        ))}
       </ul>
     </section>
   );

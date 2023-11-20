@@ -4,14 +4,12 @@
   height: 100vh;
   text-align: center;
 
-  text-shadow: var(--text_shadow);
+  // text-shadow: var(--text_shadow);
   padding-top: 10%;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('/welcome-msg-fall-bg.jpg');
-  //  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  // url('/jonathan-ansel-moy-de-vitry-Fvb8EH50PxQ-unsplash.jpg');
-  background-position: center left;
+  background-position: top left;
   background-size: cover;
   @media screen and (orientation: landscape) and (max-height: 420px) {
     padding-top: 72px;
@@ -48,6 +46,7 @@
 }
 
 .description {
+  // color: #4f6874;
   font-size: 16px;
   font-weight: 400;
   // font-style: italic;

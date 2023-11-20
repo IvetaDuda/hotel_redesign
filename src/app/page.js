@@ -4,6 +4,7 @@ import Hero from '@/sections/Hero/Hero';
 import styles from './page.module.scss';
 import ContactLink from '@/components/ContactLink/ContatLink';
 import AboutUs from '@/sections/AboutUs/AboutUs';
+import Contacts from '@/sections/Contacts/Contacts';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <ContactLink />
       <AboutUs />
+      <Contacts />
       {/* <About /> */}
     </>
   );

@@ -28,7 +28,7 @@ export const offers = [
   {
     id: v4(),
     img: '/pexels-nano-erdozain-19046659.jpg',
-    title: 'Прогулянка на коняч',
+    title: 'Прогулянка на конях',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
   },
 ];

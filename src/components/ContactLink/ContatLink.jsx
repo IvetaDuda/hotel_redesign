@@ -4,26 +4,31 @@ import styles from './ContactLink.module.scss';
 const ContactLink = () => {
   return (
     <ul className={styles.contactContainer}>
-      <li className={styles.contactItem}>
-        <svg className={styles.svg + ' ' + styles.svgPhone}>
-          <use href="sprite.svg#phone" />
-        </svg>
-        <a
-          href="tel:+380966058605"
-          className={styles.link + ' ' + 'textLinkAnimation'}
-        >
-          +38 (096) 605 86 05
+      <li>
+        <a href="tel:+380966058605" className={styles.contactLink}>
+          <p className={styles.link + ' ' + 'textLinkAnimation'}>
+            +38 (096) 605 86 05
+          </p>
+          <div className={styles.contactItem}>
+            <svg className={styles.svg + ' ' + styles.svgPhone}>
+              <use href="sprite.svg#phone" />
+            </svg>
+          </div>
         </a>
       </li>
-      <li className={styles.contactItem}>
-        <svg className={styles.svg + ' ' + styles.svgEmail}>
-          <use href="sprite.svg#email" />
-        </svg>
+      <li>
         <a
           href="mailto:inbox.webevery@gmail.com"
-          className={styles.link + ' ' + 'textLinkAnimation'}
+          className={styles.contactLink}
         >
-          inbox.webevery@gmail.com
+          <p className={styles.link + ' ' + 'textLinkAnimation'}>
+            inbox.webevery@gmail.com
+          </p>
+          <div className={styles.contactItem}>
+            <svg className={styles.svg + ' ' + styles.svgEmail}>
+              <use href="sprite.svg#email" />
+            </svg>
+          </div>
         </a>
       </li>
     </ul>

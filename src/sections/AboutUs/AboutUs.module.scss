@@ -1,66 +1,101 @@
 .container {
-  padding: 50px 0px 0px 0px;
+  padding: 24px 0px 0px 0px;
+  @media screen and (min-width: 768px) {
+    padding: 30px 0px 0px 0px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 50px 0px 0px 0px;
+  }
 }
 
 .aboutTitle {
-  font-size: 42px;
+  font-size: 24px;
   color: #2c281f;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
 }
 
 .aboutContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  // column-gap: 24px;
-  // row-gap: 16px;
-  // padding: 50px 50px;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
 }
 
 .aboutItem {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 650px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  &:nth-child(2n + 1) {
-    &::before {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: linear-gradient(
-        270deg,
-        hsla(47, 26%, 93%, 0) 0,
-        hsla(47, 26%, 93%, 0) 20%,
-        #f2f0e9 77%,
-        #f2f0e9
-      );
-    }
+  align-items: flex-end;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      hsla(47, 26%, 93%, 0) 0,
+      hsla(47, 26%, 93%, 0) 30%,
+      #f2f0e9 77%,
+      #f2f0e9
+    );
+    left: inherit;
+    right: 0;
   }
-  &:nth-child(2n + 2) {
-    justify-content: flex-end;
-    text-align: end;
-    &::before {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background: linear-gradient(
-        90deg,
-        hsla(47, 26%, 93%, 0) 0,
-        hsla(47, 26%, 93%, 0) 20%,
-        #f2f0e9 77%,
-        #f2f0e9
-      );
-      left: inherit;
-      right: 0;
+  @media screen and (min-width: 768px) {
+    height: 550px;
+    align-items: center;
+    justify-content: flex-start;
+    &:nth-child(2n + 1) {
+      &::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(
+          270deg,
+          hsla(47, 26%, 93%, 0) 0,
+          hsla(47, 26%, 93%, 0) 20%,
+          #f2f0e9 77%,
+          #f2f0e9
+        );
+      }
+    }
+    &:nth-child(2n + 2) {
+      justify-content: flex-end;
+      text-align: end;
+      &::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: linear-gradient(
+          90deg,
+          hsla(47, 26%, 93%, 0) 0,
+          hsla(47, 26%, 93%, 0) 20%,
+          #f2f0e9 77%,
+          #f2f0e9
+        );
+        left: inherit;
+        right: 0;
+      }
     }
   }
 }
@@ -68,35 +103,76 @@
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 650px;
+  @media screen and (min-width: 768px) {
+    height: 550px;
+  }
 }
 
 .img {
   object-fit: cover;
-  object-position: center center;
+  object-position: bottom center;
   z-index: -2;
+  @media screen and (min-width: 768px) {
+    object-position: center center;
+  }
 }
 .aboutContent {
-  width: 50%;
-  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 16px 32px;
   z-index: 10;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    width: 50%;
+    padding: 0px 50px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 50%;
+    padding: 0px 90px;
+  }
 }
 
 .aboutSubitle {
-  font-size: 36px;
+  font-size: 24px;
   color: #2c281f;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .aboutText {
-  font-size: 24px;
+  font-size: 16px;
   color: #4a4535;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 .aboutBtn {
+  width: 132px;
   text-transform: uppercase;
+  font-size: 12px;
   padding: 12px 24px;
   background-color: #4a4535;
   color: #f2f0e9;

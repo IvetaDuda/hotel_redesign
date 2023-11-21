@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation';
 
 const HeaderLinks = ({ costumStyles }) => {
   const pathname = usePathname();
-  // console.log(pathname);
+
   return (
     <ul className={styles.navLinks + ' ' + costumStyles}>
       {headerLinks.map((item) => {

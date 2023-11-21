@@ -1,13 +1,19 @@
 .hero {
+  position: relative;
   width: 100%;
   height: 100vh;
   text-align: center;
-
-  padding-top: 30%;
+  padding-top: 50%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('/welcome-msg-fall-bg.jpg');
   background-position: top left;
   background-size: cover;
+  @media screen and (min-width: 500px) {
+    padding-top: 40%;
+  }
+  @media screen and (min-width: 600px) {
+    padding-top: 30%;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 20%;
   }
@@ -72,4 +78,57 @@
     opacity: 1;
     scale: 1;
   }
+}
+
+.heroArrow {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  opacity: 0;
+  scale: 0.8;
+  animation: arrow 2s 0.5s linear forwards,
+    arrowAnimation 2s ease-in-out infinite alternate;
+  &:hover,
+  &:focus {
+    animation-play-state: paused;
+  }
+  // &::after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   bottom: 76px;
+  //   left: -5px;
+
+  //   width: 90px;
+  //   height: 2px;
+  //   background-color: #d9e8e877;
+  //   transform: rotate(90deg);
+  // }
+}
+@keyframes arrowAnimation {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes arrow {
+  to {
+    opacity: 1;
+    scale: 1;
+    filter: blur(0);
+  }
+}
+
+.heroArrowSvg {
+  width: 90px;
+  height: 90px;
+  stroke: #d9e8e874;
 }

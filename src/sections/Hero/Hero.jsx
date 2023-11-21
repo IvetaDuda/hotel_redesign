@@ -1,3 +1,7 @@
+'use client';
+
+import { handleScroll } from '@/helpers/handleScroll';
+import Link from 'next/link';
 import React from 'react';
 import styles from './Hero.module.scss';
 const Hero = () => {
@@ -9,6 +13,11 @@ const Hero = () => {
         гірського пейзажу, де кожна відпустка - це незабутня подорожжю до
         природи.
       </p>
+      <Link className={styles.heroArrow} href="#about" onClick={handleScroll}>
+        <svg className={styles.heroArrowSvg}>
+          <use href="sprite.svg#icon-chevron-down" />
+        </svg>
+      </Link>
     </section>
   );
 };

@@ -6,7 +6,8 @@ const ContactLink = () => {
     <ul className={styles.contactContainer}>
       <li>
         <a href="tel:+380966058605" className={styles.contactLink}>
-          <p className={styles.link + ' ' + 'textLinkAnimation'}>
+          <p className={styles.link}>
+            {/* <p className={styles.link + ' ' + 'textLinkAnimation'}> */}
             +38 (096) 605 86 05
           </p>
           <div className={styles.contactItem}>
@@ -21,7 +22,8 @@ const ContactLink = () => {
           href="mailto:inbox.webevery@gmail.com"
           className={styles.contactLink}
         >
-          <p className={styles.link + ' ' + 'textLinkAnimation'}>
+          <p className={styles.link}>
+            {/* <p className={styles.link + ' ' + 'textLinkAnimation'}> */}
             inbox.webevery@gmail.com
           </p>
           <div className={styles.contactItem}>

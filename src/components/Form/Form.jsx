@@ -6,19 +6,34 @@ const Form = () => {
     <form className={styles.form}>
       <h3 className={styles.formTitle}>Звязатись з нами</h3>
       <div className={styles.inputGroup}>
-        <input type="text" className={styles.formInput} id="userName" />
+        <input
+          type="text"
+          className={styles.formInput}
+          id="userName"
+          placeholder=" "
+        />
         <label htmlFor="userName" className={styles.formLabel}>
           Імя
         </label>
       </div>
       <div className={styles.inputGroup}>
-        <input type="tel" className={styles.formInput} id="tel" />
+        <input
+          type="tel"
+          className={styles.formInput}
+          id="tel"
+          placeholder=" "
+        />
         <label htmlFor="tel" className={styles.formLabel}>
           Телефон
         </label>
       </div>
       <div className={styles.inputGroup}>
-        <input type="email" className={styles.formInput} id="email" />
+        <input
+          type="email"
+          className={styles.formInput}
+          id="email"
+          placeholder=" "
+        />
         <label htmlFor="email" className={styles.formLabel}>
           Пошта
         </label>
@@ -29,6 +44,7 @@ const Form = () => {
           cols="30"
           rows="2"
           id="message"
+          placeholder=" "
         />
         <label htmlFor="message" className={styles.formLabel}>
           Повідомлення

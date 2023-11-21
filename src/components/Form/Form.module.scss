@@ -42,7 +42,8 @@
   border: 2px solid #5f8b8e;
   border-radius: 4px;
   padding: 8px 16px;
-  &:focus + .formLabel {
+  &:focus + .formLabel,
+  &:not(:placeholder-shown) + .formLabel {
     transform: translateY(-70%) scale(0.9);
     padding-inline: 4px;
     color: #5f8b8e;

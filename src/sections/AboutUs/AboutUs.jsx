@@ -9,9 +9,9 @@ const AboutUs = () => {
       <ul className={styles.aboutContainer}>
         {offers.map(({ id, img, title, text }) => (
           <li className={styles.aboutItem} key={id}>
-            <div className={styles.imgContsiner}>
-              <Image src={img} fill={true} alt="img" className={styles.img} />
-            </div>
+            {/* <div className={styles.imgContainer}> */}
+            <Image src={img} fill={true} alt="img" className={styles.img} />
+            {/* </div> */}
             <div className={styles.aboutContent}>
               <h3 className={styles.aboutSubitle}>{title}</h3>
               <p className={styles.aboutText}>{text}</p>

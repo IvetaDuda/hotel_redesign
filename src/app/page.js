@@ -13,7 +13,6 @@ export default function Home() {
       <ContactLink />
       <AboutUs />
       <Contacts />
-      {/* <About /> */}
     </>
   );
 }

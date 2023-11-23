@@ -10,12 +10,15 @@
   background-size: cover;
   //   position: fixed;
   //   bottom: 0;
-  padding: 60px 100px;
+  padding: 60px 100px 101px 100px;
   // text-shadow: var(--text_shadow);
   // border-top: 1px solid var(--border_semi_white);
 
   // position: absolute;
   // bottom: 0;
+  @media screen and (min-width: 768px) {
+    padding: 60px 100px 60px 100px;
+  }
 }
 
 .content {
@@ -58,4 +61,9 @@
     background-position: -200% center;
     filter: brightness(2);
   }
+}
+
+.linkTitle {
+  font-weight: 200;
+  font-size: 20px;
 }

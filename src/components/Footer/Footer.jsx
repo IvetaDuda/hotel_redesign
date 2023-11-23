@@ -10,7 +10,10 @@ const Footer = () => {
       <div className={styles.content}>
         <TelEmail />
         {/* <Contacts /> */}
-        <HeaderLinks costumStyles={styles.links} />
+        <HeaderLinks
+          costumStyles={styles.links}
+          costumStylesLink={styles.linkTitle}
+        />
       </div>
       <a
         className={styles.footerWebevery}

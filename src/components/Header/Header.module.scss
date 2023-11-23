@@ -1,4 +1,4 @@
-.header {
+.headerContainer {
   display: none;
   @media screen and (min-width: 768px) {
     width: 100%;
@@ -6,16 +6,15 @@
     align-items: center;
     position: absolute;
     top: 0;
+    left: 0;
     padding: 15px;
     font-size: 12px;
     z-index: 10;
     column-gap: 30px;
-    // @media screen and (min-width: 768px) {
-    //   font-size: 16px;
-    // }
   }
 }
-.headerContacts {
-  gap: 4px;
-  margin-left: auto;
+
+.linkTitle {
+  font-weight: 200;
+  font-size: 20px;
 }

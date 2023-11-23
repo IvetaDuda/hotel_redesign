@@ -7,7 +7,7 @@ import { handleScroll } from '@/helpers/handleScroll';
 import { headerLinks } from '@/data/headerLinks';
 import { usePathname } from 'next/navigation';
 
-const HeaderLinks = ({ costumStyles }) => {
+const HeaderLinks = ({ costumStyles, costumStylesLink }) => {
   const pathname = usePathname();
 
   return (
@@ -23,7 +23,8 @@ const HeaderLinks = ({ costumStyles }) => {
                 isActive ? styles.activeLink : ' ' + 'textLinkAnimation'
               }
             >
-              <p className={styles.linkTitle}>{item.title}</p>
+              {/* <p className={styles.linkTitle}>{item.title}</p> */}
+              <p className={costumStylesLink}>{item.title}</p>
             </Link>
           </li>
         );

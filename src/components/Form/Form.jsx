@@ -4,7 +4,7 @@ import styles from './Form.module.scss';
 const Form = () => {
   return (
     <form className={styles.form}>
-      <h3 className={styles.formTitle}>Звязатись з нами</h3>
+      <h3 className={styles.formTitle}>Зв&#39;язатися з нами</h3>
       <div className={styles.inputGroup}>
         <input
           type="text"
@@ -13,7 +13,7 @@ const Form = () => {
           placeholder=" "
         />
         <label htmlFor="userName" className={styles.formLabel}>
-          Імя
+          Ім&#39;я
         </label>
       </div>
       <div className={styles.inputGroup}>

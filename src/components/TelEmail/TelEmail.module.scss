@@ -17,14 +17,14 @@
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  & svg,
-  & .link {
-    color: white;
-    text-shadow: var(--text_shadow);
-  }
+  // display: flex;
+  // align-items: center;
+  // gap: 16px;
+  // & svg,
+  // & .link {
+  //   color: white;
+  //   text-shadow: var(--text_shadow);
+  // }
 
   // &:hover,
   // &:focus {
@@ -34,7 +34,55 @@
   // }
 }
 
+.contactLink {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
 .link {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 20px;
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+}
+
+.svgEmail {
+  fill: transparent;
+  stroke: #4a4535;
+  // stroke: #ffffff;
+}
+
+.svgPhone {
+  fill: #4a4535;
+}
+
+.textLinkAnimation {
+  text-decoration: none;
+  position: relative;
+  outline: none;
+}
+
+.textLinkAnimation:hover.textLinkAnimation::after,
+.textLinkAnimation:focus.textLinkAnimation::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  animation: textLink 0.8s ease forwards;
+  background-color: #4a4535;
+}
+@keyframes textLink {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
 }

@@ -9,5 +9,6 @@ import { v4 } from 'uuid';
 export const headerLinks = [
   { id: v4(), href: '#hero', title: 'Головна' },
   { id: v4(), href: '#about', title: 'Про нас' },
+  { id: v4(), href: '#services', title: 'Послуги' },
   { id: v4(), href: '#contacts', title: 'Контакти' },
 ];

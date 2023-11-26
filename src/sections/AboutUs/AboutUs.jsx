@@ -1,27 +1,20 @@
-import { offers } from '@/data/offers';
-import Image from 'next/image';
 import styles from './AboutUs.module.scss';
 
 const AboutUs = () => {
   return (
     <section className={styles.container} id="about">
-      <h2 className={styles.aboutTitle}>Наші послуги</h2>
-      <ul className={styles.aboutContainer}>
-        {offers.map(({ id, img, title, text }) => (
-          <li className={styles.aboutItem} key={id}>
-            {/* <div className={styles.imgContainer}> */}
-            <Image src={img} fill={true} alt="img" className={styles.img} />
-            {/* </div> */}
-            <div className={styles.aboutContent}>
-              <h3 className={styles.aboutSubitle}>{title}</h3>
-              <p className={styles.aboutText}>{text}</p>
-              <button type="button" className={styles.aboutBtn}>
-                Детальніше
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <h2 className={styles.aboutTitle}>Про нас</h2>
+      <div className={styles.aboutContainer}>
+        <p className={styles.aboutText}>
+          В нашому готелі ви зможете насолодитися гірськими екскурсіями, лижним
+          відпочинком та багатьма іншими активностями, які надихнуть вас.
+        </p>
+        <p className={styles.aboutText}>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+          officiis ullam dicta, consequatur voluptatem facilis tempore minus
+          cupiditate quaerat excepturi!
+        </p>
+      </div>
     </section>
   );
 };

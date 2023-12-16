@@ -14,3 +14,30 @@
   color: cadetblue;
   background-color: darkcyan;
 }
+
+.textLinkAnimation {
+  text-decoration: none;
+  position: relative;
+  outline: none;
+}
+
+.textLinkAnimation:hover.textLinkAnimation::after,
+.textLinkAnimation:focus.textLinkAnimation::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  animation: textLink 0.8s ease forwards;
+  background-color: #ffffff;
+}
+@keyframes textLink {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}

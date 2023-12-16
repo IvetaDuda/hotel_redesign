@@ -29,7 +29,7 @@ const Services = () => {
 
   return (
     <section className={styles.container} id="services">
-      <h2 className={styles.servicesTitle}>Наші послуги</h2>
+      {/* <h2 className={styles.servicesTitle}>Наші послуги</h2> */}
       <Swiper
         ref={swiperRef}
         pagination={{

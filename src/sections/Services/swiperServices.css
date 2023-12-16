@@ -20,6 +20,16 @@
   height: 100%;
   object-fit: cover;
 }
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 0px);
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 16px);
+  }
+}
+
 .swiper-pagination-bullet-active {
   background: #fff;
 }

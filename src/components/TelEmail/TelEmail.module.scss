@@ -1,37 +1,18 @@
-.contacts {
-  // width: fit-content;
-  gap: 40px;
-  background-color: rgba(0, 0, 0, 0.3);
-  @media screen and (min-width: 768px) {
-    gap: 64px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: fit-content;
-  }
-}
-
 .contactsWrapper {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  row-gap: 40px;
 }
 
 .contact {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
   // gap: 16px;
-  // & svg,
-  // & .link {
-  //   color: white;
-  //   text-shadow: var(--text_shadow);
-  // }
+  row-gap: 8px;
+}
 
-  // &:hover,
-  // &:focus {
-  //   & a {
-  //     text-decoration: underline;
-  //   }
-  // }
+.subtitle {
+  font-size: 20px;
 }
 
 .contactLink {
@@ -42,7 +23,7 @@
 
 .link {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .svg {

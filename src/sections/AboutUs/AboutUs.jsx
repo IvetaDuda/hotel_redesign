@@ -6,14 +6,15 @@ const AboutUs = () => {
       <h2 className={styles.aboutTitle}>Про нас</h2>
       <div className={styles.aboutContainer}>
         <p className={styles.aboutText}>
-          В нашому готелі ви зможете насолодитися гірськими екскурсіями, лижним
-          відпочинком та багатьма іншими активностями, які надихнуть вас.
+          В нашому готелі ви зможете,
+          <br></br>насолодитися гірськими екскурсіями, прогулянкою на конях,
+          гірськими стежками та багатьма іншими активностями, які надихнуть вас.
         </p>
-        <p className={styles.aboutText}>
+        {/* <p className={styles.aboutText}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
           officiis ullam dicta, consequatur voluptatem facilis tempore minus
           cupiditate quaerat excepturi!
-        </p>
+        </p> */}
       </div>
     </section>
   );

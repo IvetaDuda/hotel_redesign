@@ -6,6 +6,7 @@ import ContactLink from '@/components/ContactLink/ContatLink';
 import AboutUs from '@/sections/AboutUs/AboutUs';
 import Contacts from '@/sections/Contacts/Contacts';
 import Services from '@/sections/Services/Services';
+import Form from '@/components/Form/Form';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       {/* <ContactLink /> */}
       <AboutUs />
       <Services />
+      <Form />
       <Contacts />
     </>
   );

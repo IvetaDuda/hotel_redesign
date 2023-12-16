@@ -21,14 +21,15 @@ export const offers = [
   },
   {
     id: v4(),
-    img: '/bg_mountains3.jpg',
-    title: 'Краєвиди',
+    // img: '/pexels-antonio-prado-2325420.jpg',
+    img: '/pexels-nano-erdozain-19046659.jpg',
+    title: 'Прогулянка на конях',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
   },
   {
     id: v4(),
-    img: '/pexels-nano-erdozain-19046659.jpg',
-    title: 'Прогулянка на конях',
+    img: '/pexels-dziana-hasanbekava-5480713.jpg',
+    title: 'Похід в гори',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
   },
 ];

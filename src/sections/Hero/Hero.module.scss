@@ -1,26 +1,35 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 53px);
+  height: 100%;
   // height: 100vh;
   text-align: center;
-  padding-top: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('/welcome-msg-fall-bg.jpg');
-  background-position: top left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  // padding-top: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/pexels-markus-spiske-108486.jpg');
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url('/pexels-eberhard-grossgasteiger-1303502.jpg');
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url('/welcome-msg-fall-bg.jpg');
+  background-position: center left;
   background-size: cover;
   @media screen and (min-width: 500px) {
-    padding-top: 40%;
+    // padding-top: 40%;
   }
   @media screen and (min-width: 600px) {
-    padding-top: 30%;
+    // padding-top: 30%;
   }
   @media screen and (min-width: 768px) {
     height: 100vh;
-    padding-top: 20%;
+    // padding-top: 20%;
   }
   @media screen and (min-width: 1024px) {
-    padding-top: 7%;
+    // padding-top: 20%;
+    // padding-top: 7%;
   }
   // @media screen and (orientation: landscape) and (max-height: 420px) {
   //   padding-top: 50px;
@@ -75,7 +84,8 @@
 
 .heroTitle {
   font-family: Inter;
-  color: #e5f2f2;
+  color: #ffffff;
+  // color: #e5f2f2;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 3.2px;
@@ -103,7 +113,8 @@
 
 .description {
   // color: #4f6874;
-  color: #d9e8e8;
+  color: #ffffff;
+  // color: #d9e8e8;
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
@@ -128,8 +139,10 @@
 }
 
 .heroArrow {
-  position: relative;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
+  // position: relative;
+  // height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -177,5 +190,6 @@
 .heroArrowSvg {
   width: 90px;
   height: 90px;
-  stroke: #d9e8e874;
+  stroke: #dde6e6d7;
+  // stroke: #d9e8e874;
 }

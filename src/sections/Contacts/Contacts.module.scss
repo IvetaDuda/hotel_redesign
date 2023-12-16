@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   // height: 768px;
   // background-repeat: no-repeat;
@@ -9,28 +9,63 @@
   // background-size: cover;
   display: flex;
   justify-content: center;
-  row-gap: 40px;
-  padding: 30px 0px;
+  align-items: center;
+  // row-gap: 40px;
   @media screen and (min-width: 1024px) {
-    padding: 0px;
-    row-gap: 0px;
-    height: 90vh;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    // padding: 0px;
+    // row-gap: 0px;
+    // height: 90vh;
+    // align-items: center;
+    // flex-direction: row-reverse;
+    // justify-content: space-around;
   }
   @media screen and (min-width: 1280px) {
   }
 }
 
+.title {
+  color: #2c281f;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 38px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 48px;
+    margin-bottom: 18px;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  color: #2c281f;
+  margin-bottom: 60px;
+}
+
+.containerContact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #e6e5e0;
+  padding-left: 60px;
+}
+
 .contactText {
   color: #4a4535;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // display: flex;
   @media screen and (min-width: 1024px) {
-    justify-content: flex-start;
-    align-items: flex-start;
+    // justify-content: flex-start;
+    // align-items: flex-start;
   }
 }
 
@@ -41,7 +76,7 @@
   position: relative;
   border: none;
   margin-bottom: 24px;
-  filter: grayscale(100%) invert(100%) contrast(80%) sepia(70%);
+  // filter: grayscale(100%) invert(100%) contrast(80%) sepia(70%);
 
   & iframe {
     left: 0;
@@ -53,8 +88,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 500px;
-    height: 300px;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 0px;
+
+    // width: 500px;
+    // height: 300px;
   }
 }
 

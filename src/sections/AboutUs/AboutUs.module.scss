@@ -9,40 +9,45 @@
 }
 
 .aboutTitle {
-  font-size: 24px;
+  font-size: 20px;
   color: #2c281f;
   // text-align: center;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 24px;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 36px;
-    margin-bottom: 50px;
+    font-size: 32px;
+    margin-bottom: 32px;
   }
 }
 
 .aboutContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
-  column-gap: 100px;
+  align-items: center;
+  // flex-direction: row;
+  row-gap: 32px;
+  // column-gap: 100px;
   // justify-content: space-around;
 }
 
 .aboutText {
-  width: 30%;
+  width: 70%;
+  // width: 30%;
   font-size: 16px;
   color: #4a4535;
-  text-align: justify;
+  // text-align: justify;
+  text-align: center;
   @media screen and (min-width: 768px) {
     // text-align: start;
     font-size: 18px;
     // margin-bottom: 24px;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 24px;
+    font-size: 20px;
     // margin-bottom: 30px;
   }
 }

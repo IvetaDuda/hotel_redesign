@@ -1,10 +1,22 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   // margin-top: 30px;
   row-gap: 16px;
   z-index: 100;
+  background-color: #e7e5e0;
+  padding: 60px 0px;
   @media screen and (min-width: 768px) {
     // margin-top: 50px;
   }
@@ -12,14 +24,14 @@
 
 .formTitle {
   color: #2c281f;
-  // color: #5f8b8e;
-  font-size: 20px;
-  // font-size: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
   text-align: center;
   margin-bottom: 18px;
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
-    font-size: 32px;
+    font-size: 38px;
     // font-size: 36px;
     margin-bottom: 20px;
   }
@@ -27,35 +39,41 @@
 
 .inputGroup {
   position: relative;
-  width: 100%;
+  // width: 100%;
+
+  // width: 440px;
 }
 
 .formLabel {
   position: absolute;
-  top: 5px;
-  left: 15px;
+  top: 13px;
+  left: 20px;
   color: #4a45358b;
   // color: #5f8b8e96;
   pointer-events: none;
 }
 
 .formInput {
-  width: 100%;
+  width: 430px;
+  // width: 100%;
   background-color: transparent;
   outline: none;
-  border: none;
-  border: 2px solid #4a4535;
+  border-radius: 30px;
+  border: 1px solid #ded8d4;
+
+  background-color: #f2f0e9;
+
+  // border: none;
+  // border: 2px solid #4a4535;
   // border: 2px solid #5f8b8e;
-  border-radius: 4px;
-  padding: 8px 16px;
+  // border-radius: 4px;
+  padding: 16px 20px;
   &:focus + .formLabel,
   &:not(:placeholder-shown) + .formLabel {
-    transform: translateY(-70%) scale(0.9);
+    transform: translateY(-103%) scale(0.9);
     padding-inline: 4px;
     color: #4a4535ad;
-    // color: #5f8b8e;
-    background-color: #f2f0e9;
-    // background-color: #e5e4e9;
+    background: linear-gradient(to top, #f2f0e9 50%, #e7e5e0 50%);
   }
 }
 
@@ -69,12 +87,14 @@
   cursor: pointer;
   border: none;
   outline: none;
-  padding: 12px 24px;
-  background-color: #4a4535;
+  padding: 16px 42px;
+  // background-color: #4a4535;
   // background-color: #5f8b8e;
-  border-radius: 4px;
+  // background-color: #e94a3f;
+  background-color: #88602b;
+  border-radius: 30px;
   color: #ffffff;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: inherit;
   &:hover,
   &:focus {

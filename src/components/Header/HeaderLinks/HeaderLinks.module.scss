@@ -2,12 +2,8 @@
   display: flex;
   gap: 12px;
   position: absolute;
-
-  @media screen and (min-width: 425px) {
-    // flex-direction: row;
-    transform: translateX(0%);
-    position: static;
-  }
+  transform: translateX(0%);
+  position: static;
 }
 
 .activeLink {

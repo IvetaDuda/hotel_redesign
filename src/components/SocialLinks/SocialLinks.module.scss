@@ -1,0 +1,22 @@
+.socialList {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.linkContainer {
+  cursor: pointer;
+  &:hover .linkSvg,
+  &:focus .linkSvg {
+    scale: 1.2;
+  }
+}
+
+.linkItem {
+}
+
+.linkSvg {
+  width: 16px;
+  height: 16px;
+  fill: #4a4535;
+}

@@ -2,12 +2,14 @@ import Contacts from '@/sections/Contacts/Contacts';
 import React from 'react';
 import Form from '../Form/Form';
 import HeaderLinks from '../Header/HeaderLinks/HeaderLinks';
+import SocialLinks from '../SocialLinks/SocialLinks';
 import TelEmail from '../TelEmail/TelEmail';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
     <footer className={styles.footer} id="contacts">
+      <SocialLinks costumeStyles={styles.sicialLinks} />
       <HeaderLinks
         costumStyles={styles.links}
         costumStylesLink={styles.linkTitle}

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './TelEmail.module.scss';
 import { AiFillPhone, AiFillMail } from 'react-icons/ai';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const TelEmail = ({ className }) => {
   return (
@@ -30,6 +31,9 @@ const TelEmail = ({ className }) => {
               inbox.webevery@gmail.com
             </p>
           </a>
+        </li>
+        <li>
+          <SocialLinks />
         </li>
       </ul>
     </div>

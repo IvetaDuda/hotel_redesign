@@ -1,27 +1,28 @@
 .container {
-  // padding: 60px 0;
-  background-color: #e7e5e0;
-  padding: 24px 16px 0px 16px;
+  background-image: url('/Hero3.jpg');
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(15px);
+  padding: 60px 16px 60px 16px;
   @media screen and (min-width: 768px) {
-    padding: 30px 24px 0px 24px;
+    padding: 60px 24px 60px 24px;
   }
   @media screen and (min-width: 1024px) {
-    padding: 60px 30px 60px 30px;
-    margin-top: 60px;
+    padding: 100px 30px 100px 30px;
   }
 }
 
 .aboutTitle {
   font-size: 20px;
   color: #2c281f;
-  // text-align: center;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 28px;
     margin-bottom: 24px;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 32px;
   }
 }
@@ -31,26 +32,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // flex-direction: row;
   row-gap: 32px;
-  // column-gap: 100px;
-  // justify-content: space-around;
 }
 
 .aboutText {
   width: 70%;
-  // width: 30%;
   font-size: 16px;
   color: #4a4535;
-  // text-align: justify;
   text-align: center;
   @media screen and (min-width: 768px) {
-    // text-align: start;
+    width: 50%;
     font-size: 18px;
-    // margin-bottom: 24px;
   }
   @media screen and (min-width: 1024px) {
     font-size: 20px;
-    // margin-bottom: 30px;
   }
 }

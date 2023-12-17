@@ -1,23 +1,13 @@
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
-  // height: 768px;
-  // background-repeat: no-repeat;
-  // background-image: url('/pexels-wouter-de-jong-571169.jpg');
-  // background-position: center center;
-  // background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 0 0 0;
-  @media screen and (min-width: 1024px) {
-    // padding: 0px;
-    // row-gap: 0px;
-    // height: 90vh;
-    // align-items: center;
-    // flex-direction: row-reverse;
-    // justify-content: space-around;
+  padding: 30px 0px 0px 0px;
+  @media screen and (min-width: 768px) {
+    padding: 40px 0px 0px 0px;
   }
   @media screen and (min-width: 1280px) {
   }
@@ -39,39 +29,40 @@
 }
 
 .text {
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 1.7;
   color: #2c281f;
   margin-bottom: 60px;
+  padding: 0px 16px;
 }
 
 .containerContact {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #e6e5e0;
-  padding-left: 60px;
+  padding: 30px 30px;
+  @media screen and (min-width: 768px) {
+    padding: 0 0 0 60px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .contactText {
   color: #4a4535;
-  // justify-content: center;
-  // align-items: center;
-  // display: flex;
   @media screen and (min-width: 1024px) {
-    // justify-content: flex-start;
-    // align-items: flex-start;
   }
 }
 
 .contactsMap {
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
   position: relative;
   border: none;
@@ -89,11 +80,14 @@
 
   @media screen and (min-width: 768px) {
     width: 70%;
-    height: 100%;
+    height: 500px;
     margin-bottom: 0px;
 
     // width: 500px;
     // height: 300px;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 600px;
   }
 }
 

@@ -21,7 +21,7 @@
   object-fit: cover;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: var(--swiper-pagination-bottom, 0px);
+  bottom: var(--swiper-pagination-bottom, 8px);
 }
 
 @media screen and (min-width: 768px) {
@@ -31,5 +31,10 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #fff;
+  background: #4a4535;
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
 }

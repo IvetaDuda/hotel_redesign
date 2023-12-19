@@ -1,35 +1,36 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import HeaderMobile from './HeaderMobile/HeaderMobile';
 import styles from './Header.module.scss';
 import HeaderLinks from './HeaderLinks/HeaderLinks';
 import Logo from './Logo/Logo';
 
 const Header = () => {
-  // const [isWideScreen, setIsWideScreen] = useState(false);
+  const [burgerMenu, setBurgerMenu] = useState(false);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsWideScreen(window.innerWidth > 768);
-  //   };
-  //   window.addEventListener('resize', handleResize);
-  //   handleResize();
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
+  const openModal = () => {
+    setBurgerMenu((prevState) => !prevState);
+
+    // setTimeout(() => {
+    //   setModalBackdrop(true);
+    // }, 100);
+  };
+
+  const burgerMenuChange = burgerMenu
+    ? styles.burgerMenuOpen
+    : styles.burgerMenu;
 
   return (
     <header className={styles.header}>
-      {/* {isWideScreen ? ( */}
       <div className={styles.headerContainer}>
         <Logo />
         <HeaderLinks costumStylesLink={styles.linkTitle} />
       </div>
-      {/* ) : (
-        <HeaderMobile />
-      )} */}
+      <button className={burgerMenuChange} onClick={openModal}>
+        <span className={styles.burgerMenuBtnAfter}></span>
+      </button>
+      {burgerMenu && <HeaderMobile />}
     </header>
   );
 };

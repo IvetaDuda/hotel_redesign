@@ -6,11 +6,6 @@
   position: static;
 }
 
-.activeLink {
-  color: cadetblue;
-  background-color: darkcyan;
-}
-
 .textLinkAnimation {
   text-decoration: none;
   position: relative;
@@ -27,7 +22,7 @@
   width: 100%;
   height: 1px;
   animation: textLink 0.8s ease forwards;
-  background-color: #ffffff;
+  background-color: var(--light_acсent_color);
 }
 @keyframes textLink {
   0% {

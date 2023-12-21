@@ -1,12 +1,10 @@
 .logo {
   font-family: Inter;
-  color: #ffffff;
-  // color: #e5f2f2;
+  color: var(--light_acсent_color);
   cursor: pointer;
   font-size: 24px;
   font-weight: 400;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--light_acсent_color);
   border-radius: 50%;
-  // padding: 4px 7px;
   padding: 9px 7px;
 }

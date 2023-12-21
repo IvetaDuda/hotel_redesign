@@ -8,7 +8,7 @@
       rgb(242, 240, 233, 0.6),
       rgb(242, 240, 233, 0.6)
     ),
-    url('/Hero3.jpg');
+    url('/AboutUs.jpg');
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 
 .aboutTitle {
   font-size: 20px;
-  color: #2c281f;
+  color: var(--title_color);
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 28px;
@@ -47,7 +47,7 @@
 .aboutText {
   width: 70%;
   font-size: 16px;
-  color: #4a4535;
+  color: var(--text_color);
   text-align: center;
   @media screen and (min-width: 768px) {
     width: 50%;

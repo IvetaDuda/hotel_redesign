@@ -8,12 +8,10 @@
   flex-direction: column;
 
   padding: 30px 30px;
-  // padding: 30px 100px 101px 100px;
 
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
-    // row-gap: 16px;
   }
 }
 
@@ -21,15 +19,12 @@
   width: 100%;
   height: 100%;
   display: flex;
-  // justify-content: space-between;
 }
 
 .links {
   @media screen and (min-width: 1024px) {
-    // margin-right: auto;
   }
   @media screen and (min-width: 1280px) {
-    // margin-right: 25%;
   }
 }
 
@@ -49,7 +44,7 @@
     background-clip: border-box;
     background-size: 200% auto;
 
-    color: #2c281f;
+    color: var(--title_color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

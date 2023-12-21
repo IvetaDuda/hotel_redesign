@@ -1,6 +1,6 @@
 import Contacts from '@/sections/Contacts/Contacts';
 import React from 'react';
-import Form from '../Form/Form';
+import Form from '../../sections/Form/Form';
 import HeaderLinks from '../Header/HeaderLinks/HeaderLinks';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import TelEmail from '../TelEmail/TelEmail';

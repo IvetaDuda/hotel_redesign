@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Jost:ital,wght@0,200;0,400;0,500;0,700;1,100;1,400&family=Dancing+Script&family=Inter+Tight&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Marck+Script&display=swap');
 
 :root {
-  --color_bg: #000;
-  --min_width: '300px';
-  --text_color: white;
-  --text_shadow: 0px 1px 2px black;
-  --border_semi_white: rgba(255, 255, 255, 0.3);
-  --text_acent_color: #2c281f;
+  --bg_acent_color: #f2f0e9;
+  --title_color: #2c281f;
+  --text_color: #4a4535;
+  --light_acсent_color: #ffffff;
+  --contact_bg: #e6e5e0;
+  --form_bg: #e7e5e0;
 }
 
 * {
@@ -28,8 +28,7 @@ body {
 
 body {
   min-height: 100vh;
-  color: var(--text_color);
-  background-color: #f2f0e9;
+  background-color: var(--bg_acent_color);
 }
 
 main {
@@ -73,7 +72,7 @@ ul {
   width: 100%;
   height: 1px;
   animation: textLink 0.8s ease forwards;
-  background-color: #ffffff;
+  background-color: var(--light_acсent_color);
 }
 @keyframes textLink {
   0% {

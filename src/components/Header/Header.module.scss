@@ -22,6 +22,7 @@
 .linkTitle {
   font-weight: 200;
   font-size: 20px;
+  color: var(--light_acсent_color);
 }
 
 .burgerMenuContainer {
@@ -32,8 +33,8 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #f2f0e9;
-  box-shadow: 0 0 0 0 #f2f0e9, 0 0 0 0 #f2f0e9;
+  background-color: var(--bg_acent_color);
+  box-shadow: 0 0 0 0 var(--bg_acent_color), 0 0 0 0 var(--bg_acent_color);
   padding: 35px 35px;
   display: flex;
   flex-direction: column;
@@ -51,8 +52,9 @@
   width: 100vw;
   height: 100vh;
   border-radius: 0;
-  background-color: #f2f0e9;
-  box-shadow: 0 0 0 100vw #f2f0e9, 0 0 0 100vh #f2f0e9;
+  background-color: var(--bg_acent_color);
+  box-shadow: 0 0 0 100vw var(--bg_acent_color),
+    0 0 0 100vh var(--bg_acent_color);
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -76,7 +78,7 @@
 .burgerMenu:before,
 .burgerMenu:after,
 .burgerMenu .burgerMenuBtnAfter {
-  background-color: #4a4535;
+  background-color: var(--text_color);
   content: '';
   display: block;
   width: 35px;
@@ -99,7 +101,7 @@
   &::before,
   &::after,
   & .burgerMenuBtnAfter {
-    background: #4a4535;
+    background: var(--text_color);
     content: '';
     display: block;
     width: 35px;

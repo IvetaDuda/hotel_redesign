@@ -2,8 +2,9 @@
   width: 100vw;
   height: 100vh;
 
-  box-shadow: 0 0 0 100vw #f2f0e9, 0 0 0 100vh #f2f0e9;
-  color: #4a4535;
+  box-shadow: 0 0 0 100vw var(--bg_acent_color),
+    0 0 0 100vh var(--bg_acent_color);
+  color: var(--text_color);
   padding: 15px;
   font-size: 16px;
 

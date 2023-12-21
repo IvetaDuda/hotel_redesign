@@ -1,12 +1,17 @@
+import SocialLinks from '@/components/SocialLinks/SocialLinks';
 import HeaderLinks from '../HeaderLinks/HeaderLinks';
 import styles from './HeaderMobile.module.scss';
 
-const HeaderMobile = () => {
+const HeaderMobile = ({ burgerMenu, setBurgerMenu }) => {
+  const burgerMenuChangeOpen = burgerMenu
+    ? styles.headerMobileOpen + ' ' + styles.headerMobile
+    : styles.headerMobileClose + ' ' + styles.headerMobile;
   return (
-    <div className={styles.header}>
+    <div className={burgerMenuChangeOpen}>
       <HeaderLinks
         costumStyles={styles.headerNav}
         costumStylesLink={styles.headerNavLink}
+        setBurgerMenu={setBurgerMenu}
       />
       <div className={styles.contacts}>
         <a href="tel:+380966058605" className={styles.contactLink}>
@@ -19,6 +24,7 @@ const HeaderMobile = () => {
           inbox.webevery@gmail.com
         </a>
       </div>
+      <SocialLinks />
     </div>
   );
 };

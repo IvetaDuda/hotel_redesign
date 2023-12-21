@@ -7,7 +7,12 @@ import { handleScroll } from '@/helpers/handleScroll';
 import { headerLinks } from '@/data/headerLinks';
 import { usePathname } from 'next/navigation';
 
-const HeaderLinks = ({ costumStyles, costumStylesLink, costumStylesArrow }) => {
+const HeaderLinks = ({
+  costumStyles,
+  costumStylesLink,
+  costumStylesArrow,
+  setBurgerMenu,
+}) => {
   const pathname = usePathname();
 
   return (
@@ -18,14 +23,16 @@ const HeaderLinks = ({ costumStyles, costumStylesLink, costumStylesArrow }) => {
           <li key={item.id}>
             <Link
               href={item.href}
-              onClick={handleScroll}
+              onClick={() => {
+                handleScroll;
+                setBurgerMenu(false);
+              }}
               className={
                 isActive
                   ? styles.activeLink
                   : ' ' + styles.textLinkAnimation + ' ' + costumStylesArrow
               }
             >
-              {/* <p className={styles.linkTitle}>{item.title}</p> */}
               <p className={costumStylesLink}>{item.title}</p>
             </Link>
           </li>

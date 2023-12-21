@@ -24,18 +24,42 @@
   font-size: 20px;
 }
 
+.burgerMenuContainer {
+  position: fixed;
+  right: -220px;
+  top: -25px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f2f0e9;
+  box-shadow: 0 0 0 0 #f2f0e9, 0 0 0 0 #f2f0e9;
+  padding: 35px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transform: translate(-50%, -50%);
+}
+.burgerMenuContainerOpen {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  background-color: #f2f0e9;
+  box-shadow: 0 0 0 100vw #f2f0e9, 0 0 0 100vh #f2f0e9;
+}
+
 .burgerMenu {
   position: fixed;
-  top: 40px;
-  right: 0px;
-  z-index: 1000;
-  background-color: transparent;
+  top: 10px;
+  right: 12px;
+  z-index: 999;
   outline: none;
   cursor: pointer;
   border: none;
-
-  transform: translate(-50%, -50%);
-  width: 50px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -45,27 +69,24 @@
 .burgerMenu:before,
 .burgerMenu:after,
 .burgerMenu .burgerMenuBtnAfter {
-  background: #4a4535;
+  background-color: #4a4535;
   content: '';
   display: block;
-  height: 6px;
+  width: 35px;
+  height: 4px;
   border-radius: 3px;
-  margin: 7px 0;
+  margin: 4px 0;
   transition: 0.5s;
 }
 
 .burgerMenuOpen {
   position: fixed;
-  top: 40px;
-  right: 0px;
-  z-index: 1000;
-  background-color: transparent;
+  top: 10px;
+  right: 12px;
+  z-index: 999;
   outline: none;
   cursor: pointer;
   border: none;
-
-  transform: translate(-50%, -50%);
-  width: 50px;
 
   &::before,
   &::after,
@@ -73,16 +94,17 @@
     background: #4a4535;
     content: '';
     display: block;
-    height: 6px;
+    width: 35px;
+    height: 4px;
     border-radius: 3px;
-    margin: 7px 0;
+    margin: 4px 0;
     transition: 0.5s;
   }
   &::before {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(10px) rotate(135deg);
   }
   &::after {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-7px) rotate(-135deg);
   }
   & .burgerMenuBtnAfter {
     transform: scale(0);

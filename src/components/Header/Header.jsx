@@ -11,16 +11,15 @@ const Header = () => {
 
   const openModal = () => {
     setBurgerMenu((prevState) => !prevState);
-
-    // setTimeout(() => {
-    //   setModalBackdrop(true);
-    // }, 100);
   };
 
   const burgerMenuChange = burgerMenu
     ? styles.burgerMenuOpen
     : styles.burgerMenu;
 
+  const burgerMenuChangeOpen = burgerMenu
+    ? styles.burgerMenuContainerOpen
+    : styles.burgerMenuContainer;
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
@@ -30,7 +29,10 @@ const Header = () => {
       <button className={burgerMenuChange} onClick={openModal}>
         <span className={styles.burgerMenuBtnAfter}></span>
       </button>
-      {burgerMenu && <HeaderMobile />}
+      <div className={burgerMenuChangeOpen}></div>
+      {burgerMenu && (
+        <HeaderMobile burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
+      )}
     </header>
   );
 };

@@ -103,7 +103,7 @@
 
 .img {
   object-fit: cover;
-  object-position: bottom center;
+  object-position: 70% 50%;
   z-index: -2;
   @media screen and (min-width: 768px) {
     object-position: center center;

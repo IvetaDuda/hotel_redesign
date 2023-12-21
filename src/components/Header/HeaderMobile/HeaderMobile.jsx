@@ -1,8 +1,11 @@
 import SocialLinks from '@/components/SocialLinks/SocialLinks';
+import { SiteContext } from '@/context/SiteContext';
+import { useContext } from 'react';
 import HeaderLinks from '../HeaderLinks/HeaderLinks';
 import styles from './HeaderMobile.module.scss';
 
-const HeaderMobile = ({ burgerMenu, setBurgerMenu }) => {
+const HeaderMobile = () => {
+  const { burgerMenu, setBurgerMenu } = useContext(SiteContext);
   const burgerMenuChangeOpen = burgerMenu
     ? styles.headerMobileOpen + ' ' + styles.headerMobile
     : styles.headerMobileClose + ' ' + styles.headerMobile;

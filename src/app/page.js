@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <ContactLink /> */}
       <AboutUs />
       <Services />
       <Form />

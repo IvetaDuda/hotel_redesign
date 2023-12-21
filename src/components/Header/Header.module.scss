@@ -39,6 +39,9 @@
   flex-direction: column;
   justify-content: end;
   transform: translate(-50%, -50%);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .burgerMenuContainerOpen {
   position: fixed;
@@ -50,6 +53,9 @@
   border-radius: 0;
   background-color: #f2f0e9;
   box-shadow: 0 0 0 100vw #f2f0e9, 0 0 0 100vh #f2f0e9;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .burgerMenu {
@@ -60,6 +66,7 @@
   outline: none;
   cursor: pointer;
   border: none;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -87,6 +94,7 @@
   outline: none;
   cursor: pointer;
   border: none;
+  background-color: transparent;
 
   &::before,
   &::after,

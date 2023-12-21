@@ -3,7 +3,7 @@ import styles from './Form.module.scss';
 
 const Form = () => {
   return (
-    <section id="contacts" className={styles.container}>
+    <section id="form" className={styles.container}>
       <form className={styles.form}>
         <h3 className={styles.formTitle}>Зв&#39;язатися з нами</h3>
         <div className={styles.inputGroup}>

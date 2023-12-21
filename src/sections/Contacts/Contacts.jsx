@@ -6,7 +6,6 @@ import TelEmail from '@/components/TelEmail/TelEmail';
 const Contacts = () => {
   return (
     <section id="contacts" className={styles.container}>
-      {/* <Form /> */}
       <h2 className={styles.title}>Контакти</h2>
       <p className={styles.text}>
         Звяжіться з нами для надання більш детальної інформації

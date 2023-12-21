@@ -1,19 +1,21 @@
 'use client';
 
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './HeaderLinks.module.scss';
 import Link from 'next/link';
 import { handleScroll } from '@/helpers/handleScroll';
 import { headerLinks } from '@/data/headerLinks';
 import { usePathname } from 'next/navigation';
+import { SiteContext } from '@/context/SiteContext';
 
-const HeaderLinks = ({
-  costumStyles,
-  costumStylesLink,
-  costumStylesArrow,
-  setBurgerMenu,
-}) => {
+const HeaderLinks = ({ costumStyles, costumStylesLink, costumStylesArrow }) => {
   const pathname = usePathname();
+  const { setBurgerMenu } = useContext(SiteContext);
+
+  const clickLink = () => {
+    handleScroll;
+    setBurgerMenu(false);
+  };
 
   return (
     <ul className={styles.navLinks + ' ' + costumStyles}>
@@ -23,10 +25,7 @@ const HeaderLinks = ({
           <li key={item.id}>
             <Link
               href={item.href}
-              onClick={() => {
-                handleScroll;
-                setBurgerMenu(false);
-              }}
+              onClick={clickLink}
               className={
                 isActive
                   ? styles.activeLink

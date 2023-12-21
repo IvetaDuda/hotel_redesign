@@ -1,17 +1,28 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import HeaderMobile from './HeaderMobile/HeaderMobile';
 import styles from './Header.module.scss';
 import HeaderLinks from './HeaderLinks/HeaderLinks';
 import Logo from './Logo/Logo';
+import { SiteContext } from '@/context/SiteContext';
 
 const Header = () => {
-  const [burgerMenu, setBurgerMenu] = useState(false);
+  const { burgerMenu, setBurgerMenu, openModal } = useContext(SiteContext);
+  // const [burgerMenu, setBurgerMenu] = useState(false);
 
-  const openModal = () => {
-    setBurgerMenu((prevState) => !prevState);
-  };
+  // const openModal = () => {
+  //   setBurgerMenu((prevState) => !prevState);
+  // };
+
+  useEffect(() => {
+    if (burgerMenu) {
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [burgerMenu]);
 
   const burgerMenuChange = burgerMenu
     ? styles.burgerMenuOpen
@@ -30,9 +41,7 @@ const Header = () => {
         <span className={styles.burgerMenuBtnAfter}></span>
       </button>
       <div className={burgerMenuChangeOpen}></div>
-      {burgerMenu && (
-        <HeaderMobile burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
-      )}
+      {burgerMenu && <HeaderMobile />}
     </header>
   );
 };

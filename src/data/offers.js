@@ -4,32 +4,32 @@ export const offers = [
   {
     id: v4(),
     img: '/offers/Cottages.jpg',
-    title: 'Котеджі',
+    title: 'Будиночки',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
   },
   {
     id: v4(),
     img: '/offers/Swimming-pools.jpg',
     title: 'Басейни',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
+    text: "Басейн - приємна складова гарного відпочинку в Карпатах, як літнього, так і зимового. Це не просто атрибут розкоші, а ще й важливий крок до здоров'я. Відпочинок у Карпатах із басейном піде на користь практично будь-якій людині. Плавання позитивно впливає на весь організм, зміцнює імунітет, підвищує загальний тонус організму. Водні процедури знімають стрес, нормалізують сон, стабілізують тиск, роблять тіло струнким та красивим.",
   },
   {
     id: v4(),
     img: '/offers/Sauna.jpg',
     title: 'Сауна',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
+    text: 'Розслабити м’язи, відпочити, додати енергії та сил, покращити стан шкіри — відпочинок в Карпатах з сауною допоможе по-справжньому перезавантажитися!',
   },
   {
     id: v4(),
     // img: '/offers/Horse-riding2.jpg',
     img: '/offers/Horse-riding.jpg',
-    title: 'Прогулянка на конях',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
+    title: 'Кіннa прогулянкa',
+    text: 'Кіннa прогулянкa – активна і наближена до природи розвага, яка до того ж сприяє оздоровленню. Не кажучи вже про море задоволення, яке приносить катання на конях. Доброта і лагідність цих дивовижних тварин має тривалий заспокійливий ефект, укріплює тіло і гріє душу. Катання на конях суттєво доповнить Ваш відпочинок в українських Карпатах. На сьогоднішній день кінний туризм швидко розвивається і вже став популярним серед гостей Карпат.',
   },
   {
     id: v4(),
     img: '/offers/Mountain-trip.jpg',
     title: 'Похід в гори',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus a vero odit quod minima atque nemo porro rerum culpa dolores asperiores quasi saepe, aliquam suscipit, consequatur, quisquam veniam ratione!',
+    text: 'Oдна з найвищих точок Мармароського масиву - гора Піп Іван Мармароський (1936 м), що знаходиться неподалік кордону Румунії в Рахівському районі Закарпатської області. Краєвиди Мармароського масиву по своїй особливій будові нагадують гірські системи Європейських вершин та схилів, через що їх прозвали Гуцульськими Альпами.',
   },
 ];

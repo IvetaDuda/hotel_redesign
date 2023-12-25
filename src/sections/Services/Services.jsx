@@ -11,6 +11,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './swiperServices.css';
+import Link from 'next/link';
 
 const Services = () => {
   const swiperRef = useRef(null);
@@ -55,14 +56,20 @@ const Services = () => {
             <div className={styles.servicesContent}>
               <h3 className={styles.servicesSubitle}>{title}</h3>
               <p className={styles.servicesText}>{text}</p>
-              <button
+              <Link href="#form" className={styles.servicesLink}>
+                Звяжіться з нами для надання більш детальної інформації{' '}
+                <svg className={styles.servicesLinkSvg}>
+                  <use href="sprite.svg#icon-chevron-down" />
+                </svg>
+              </Link>
+              {/* <button
                 type="button"
                 className={styles.servicesBtn}
                 onClick={() => handleButtonClick()}
                 onBlur={handleButtonBlur}
               >
                 Детальніше
-              </button>
+              </button> */}
             </div>
           </SwiperSlide>
         ))}

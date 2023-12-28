@@ -1,5 +1,10 @@
 .contactsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+   -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 40px;
   margin-bottom: 30px;
@@ -9,7 +14,12 @@
 }
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+   -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 8px;
 }
@@ -19,7 +29,11 @@
 }
 
 .contactLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   column-gap: 16px;
 }

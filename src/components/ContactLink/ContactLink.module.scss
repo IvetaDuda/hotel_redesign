@@ -28,6 +28,7 @@
   background: linear-gradient(#5f8b8e, #0b384b);
   // background: linear-gradient(#8a82fb, #407ed7);
   border-radius: 50%;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   z-index: 1;

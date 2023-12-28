@@ -14,23 +14,31 @@ import './swiperServices.css';
 import Link from 'next/link';
 
 const Services = () => {
+  const [textHeight, setTextHeight] = useState(false);
   const swiperRef = useRef(null);
 
-  const handleButtonClick = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.autoplay.stop();
-    }
+  const handleToggleText = () => {
+    setTextHeight(!textHeight);
   };
 
-  const handleButtonBlur = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.autoplay.start();
-    }
-  };
+  const textStyles = !textHeight
+    ? styles.servicesTextHidden + ' ' + styles.servicesText
+    : styles.activeText + ' ' + styles.servicesText;
+
+  // const handleButtonClick = () => {
+  //   if (swiperRef.current && swiperRef.current.swiper) {
+  //     swiperRef.current.swiper.autoplay.stop();
+  //   }
+  // };
+
+  // const handleButtonBlur = () => {
+  //   if (swiperRef.current && swiperRef.current.swiper) {
+  //     swiperRef.current.swiper.autoplay.start();
+  //   }
+  // };
 
   return (
     <section className={styles.container} id="services">
-      {/* <h2 className={styles.servicesTitle}>Наші послуги</h2> */}
       <Swiper
         ref={swiperRef}
         pagination={{
@@ -42,7 +50,7 @@ const Services = () => {
         }}
         effect="slide"
         modules={[Pagination, Autoplay]}
-        className="mySwiper"
+        // className="mySwiper"
       >
         {offers.map(({ id, img, title, text }) => (
           <SwiperSlide className={styles.servicesItem} key={id}>
@@ -55,9 +63,12 @@ const Services = () => {
             />
             <div className={styles.servicesContent}>
               <h3 className={styles.servicesSubitle}>{title}</h3>
-              <p className={styles.servicesText}>{text}</p>
+
+              <p className={textStyles} onClick={handleToggleText}>
+                {text}
+              </p>
               <Link href="#form" className={styles.servicesLink}>
-                Звяжіться з нами для надання більш детальної інформації{' '}
+                Звяжіться з нами для надання більш детальної інформації
                 <svg className={styles.servicesLinkSvg}>
                   <use href="sprite.svg#icon-chevron-down" />
                 </svg>

@@ -1,4 +1,6 @@
 .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
   position: absolute;

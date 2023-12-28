@@ -2,10 +2,20 @@
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  row-gap: 8px;
 
   padding: 30px 30px;
 
@@ -18,6 +28,8 @@
 .content {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -28,13 +40,24 @@
   }
 }
 
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4a4535da;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
 .footerWebevery {
   font-weight: 400;
   font-size: 16px;
   color: #2c281fae;
+  // margin-left: 4px;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    // margin-right: 8px;
   }
   &:hover,
   &:focus {
@@ -80,92 +103,3 @@
     right: 30px;
   }
 }
-
-// .footer {
-//   position: relative;
-//   width: 100%;
-//   // height: 10vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//   // background-image: linear-gradient(
-//   //     180deg,
-//   //     rgba(44, 40, 31, 0.8996848739495799) 0%,
-//   //     rgba(44, 40, 31, 0.6587885154061625) 50%,
-//   //     rgba(44, 40, 31, 0.9220938375350141) 100%
-//   //   ),
-//   //   url('/kseniia-rastvorova-U2AwijfUNS4-unsplash.jpg');
-//   // background-position: bottom center;
-//   // background-size: cover;
-
-//   padding: 30px 100px 101px 100px;
-
-//   @media screen and (min-width: 768px) {
-//     padding: 50px 100px 40px 50px;
-//   }
-//   @media screen and (min-width: 1024px) {
-//     align-items: center;
-//     justify-content: flex-start;
-//     flex-direction: row;
-//   }
-// }
-
-// .content {
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   // column-gap: 150px;
-// }
-
-// .links {
-//   // flex-direction: column;
-//   @media screen and (min-width: 1024px) {
-//     margin-right: auto;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     // margin-right: 0%;
-//     margin-right: 25%;
-//   }
-// }
-
-// .footerWebevery {
-//   font-weight: 400;
-//   font-size: 20px;
-//   color: #2c281f;
-//   &:hover,
-//   &:focus {
-//     scale: 1.05;
-//     // filter: brightness(2);
-//     // background-image: linear-gradient(
-//     //   30deg,
-//     //   #fffffe 70%,
-//     //   rgba(255, 255, 255, 0) 100%
-//     // );
-//     background-image: linear-gradient(30deg, #2c281f 70%, #2c281f63 100%);
-//     background-size: auto auto;
-//     background-clip: border-box;
-//     background-size: 200% auto;
-
-//     color: #2c281f;
-//     background-clip: text;
-//     // text-fill-color: transparent;
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     animation: textclip 0.5s linear both;
-//   }
-// }
-
-// @keyframes textclip {
-//   100% {
-//     background-position: -200% center;
-//     filter: brightness(2);
-//   }
-// }
-
-// .linkTitle {
-//   font-weight: 400;
-//   font-size: 20px;
-//   color: #2c281f;
-// }

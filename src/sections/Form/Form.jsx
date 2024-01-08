@@ -1,10 +1,17 @@
+'use client';
+
 import React from 'react';
 import styles from './Form.module.scss';
 
 const Form = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Додайте вашу логіку обробки форми тут
+    console.log('Form submitted!');
+  };
   return (
     <section id="form" className={styles.container}>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <h3 className={styles.formTitle}>Зв&#39;язатися з нами</h3>
         <div className={styles.inputGroup}>
           <input

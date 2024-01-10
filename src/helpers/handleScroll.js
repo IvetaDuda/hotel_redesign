@@ -1,5 +1,5 @@
 export const handleScroll = (e) => {
-  if (typeof window !== 'undefined') {
+  if (typeof window !== 'undefined' && e.target instanceof Element) {
     const href = e.target.getAttribute('href');
 
     if (!href) {

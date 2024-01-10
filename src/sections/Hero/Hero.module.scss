@@ -15,6 +15,7 @@
   overflow-x: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('/Hero_bg.webp');
+  image-rendering: auto;
   background-position: center left;
   background-size: cover;
   // @media screen and (orientation: landscape) and (max-height: 420px) {

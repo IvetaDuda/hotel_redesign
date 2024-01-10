@@ -1,13 +1,26 @@
 export const handleScroll = (e) => {
-  // first prevent the default behavior
-  e.preventDefault();
-  // get the href and remove everything before the hash (#)
-  const href = e.currentTarget.href;
+  // перевіряємо, чи це дійсно DOM-елемент
+  if (!(e.target instanceof Element)) {
+    return;
+  }
 
-  const targetId = href.replace(/.*\#/, "");
-  // get the element by id and use scrollIntoView
+  // отримуємо href з елемента, який має викликав подію
+  const href = e.target.getAttribute('href');
+
+  if (!href) {
+    return;
+  }
+
+  const targetId = href.replace(/.*\#/, '');
   const elem = document.getElementById(targetId);
-  elem?.scrollIntoView({
-    behavior: "smooth",
-  });
+
+  if (elem) {
+    e.preventDefault();
+    elem.scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
 };
+
+// Додаємо прослушувач подій з passive флагом
+document.addEventListener('scroll', handleScroll, { passive: true });

@@ -23,4 +23,5 @@ export const handleScroll = (e) => {
 };
 
 // Додаємо прослушувач подій з passive флагом
+
 document.addEventListener('scroll', handleScroll, { passive: true });

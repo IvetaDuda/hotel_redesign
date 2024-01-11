@@ -21,7 +21,7 @@
 }
 
 .heroTitle {
-  // font-family: Inter;
+  font-family: Inter;
   color: var(--light_acсent_color);
   // color: #e5f2f2;
   font-size: 24px;
@@ -31,7 +31,7 @@
   opacity: 0;
   // scale: 0.8;
   filter: blur(1px);
-  animation: title 1s 0.5s linear forwards;
+  // animation: title 1s 0.5s linear forwards;
   @media screen and (min-width: 768px) {
     font-size: 38px;
   }
@@ -41,13 +41,13 @@
   }
 }
 
-@keyframes title {
-  to {
-    opacity: 1;
-    // scale: 1;
-    filter: blur(0);
-  }
-}
+// @keyframes title {
+//   to {
+//     opacity: 1;
+//     // scale: 1;
+//     filter: blur(0);
+//   }
+// }
 
 .description {
   color: var(--light_acсent_color);
@@ -58,16 +58,16 @@
   line-height: 1.7;
   width: 75%;
   opacity: 0;
-  animation: description 1.5s 0.5s linear forwards;
+  // animation: description 1.5s 0.5s linear forwards;
   @media screen and (min-width: 1024px) {
     font-size: 18px;
   }
 }
-@keyframes description {
-  to {
-    opacity: 1;
-  }
-}
+// @keyframes description {
+//   to {
+//     opacity: 1;
+//   }
+// }
 
 .heroArrow {
   position: absolute;

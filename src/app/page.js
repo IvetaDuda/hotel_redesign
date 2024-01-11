@@ -1,18 +1,20 @@
 import Hero from '@/sections/Hero/Hero';
-import AboutUs from '@/sections/AboutUs/AboutUs';
-import Contacts from '@/sections/Contacts/Contacts';
-import Services from '@/sections/Services/Services';
-import Form from '@/sections/Form/Form';
+import dynamic from 'next/dynamic';
 // import styles from './page.module.scss';
+
+const DynamicAboutUs = dynamic(() => import('@/sections/AboutUs/AboutUs'));
+const DynamicContacts = dynamic(() => import('@/sections/Contacts/Contacts'));
+const DynamicServices = dynamic(() => import('@/sections/Services/Services'));
+const DynamicForm = dynamic(() => import('@/sections/Form/Form'));
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <AboutUs />
-      <Services />
-      <Form />
-      <Contacts />
+      <DynamicAboutUs />
+      <DynamicServices />
+      <DynamicForm />
+      <DynamicContacts />
     </>
   );
 }

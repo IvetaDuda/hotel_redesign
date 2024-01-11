@@ -1,8 +1,11 @@
 import './globals.css';
 import { Jost } from 'next/font/google';
 import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import { SiteProvider } from '@/context/SiteContext';
+
+import dynamic from 'next/dynamic';
+
+const DynamicFooter = dynamic(() => import('@/components/Footer/Footer'));
 
 const jost = Jost({ subsets: ['latin'] });
 
@@ -18,7 +21,7 @@ export default function RootLayout({ children }) {
         <SiteProvider>
           <Header />
           <main>{children}</main>
-          <Footer />
+          <DynamicFooter />
         </SiteProvider>
       </body>
     </html>

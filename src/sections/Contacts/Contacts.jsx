@@ -19,6 +19,7 @@ const Contacts = () => {
             height="400"
             allowFullScreen
             loading="lazy"
+            title="Адреса на мапі"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

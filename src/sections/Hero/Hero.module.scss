@@ -16,6 +16,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('/Hero_bg.webp');
   image-rendering: auto;
+  background-attachment: lazy;
   background-position: center left;
   background-size: cover;
 }

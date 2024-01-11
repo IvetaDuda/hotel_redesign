@@ -37,7 +37,12 @@ const Header = () => {
         <Logo />
         <HeaderLinks costumStylesLink={styles.linkTitle} />
       </div>
-      <button className={burgerMenuChange} onClick={openModal}>
+      <button
+        className={burgerMenuChange}
+        onClick={openModal}
+        aria-label="Button burger menu"
+        title="Burger Menu"
+      >
         <span className={styles.burgerMenuBtnAfter}></span>
       </button>
       <div className={burgerMenuChangeOpen}></div>

@@ -1,0 +1,1 @@
+export const regexPhone = /^\+\d{12}$/;

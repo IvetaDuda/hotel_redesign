@@ -1,119 +1,127 @@
 .container {
-  width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .form {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  row-gap: 16px;
-  background-color: var(--form_bg);
-  padding: 60px 0px;
-  @media screen and (min-width: 768px) {
-  }
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 16px;
+    background-color: var(--form_bg);
+    padding: 60px 0px;
+    @media screen and (min-width: 768px) {
+    }
 }
 
 .formTitle {
-  color: var(--title_color);
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-align: center;
-  margin-bottom: 18px;
-  text-transform: uppercase;
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
+    color: var(--title_color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
 }
 
 .inputGroup {
-  position: relative;
+    position: relative;
 }
 
 .formLabel {
-  position: absolute;
-  top: 10px;
-  left: 16px;
-  color: #4a45358b;
-  pointer-events: none;
-  @media screen and (min-width: 768px) {
-    top: 13px;
-    left: 20px;
-  }
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    color: #4a45358b;
+    pointer-events: none;
+    @media screen and (min-width: 768px) {
+        top: 13px;
+        left: 20px;
+    }
 }
 
 .formInput {
-  width: 300px;
-  background-color: transparent;
-  outline: none;
-  border-radius: 30px;
-  border: 1px solid #ded8d4;
-  background-color: var(--bg_acent_color);
-  padding: 12px 20px;
-  @media screen and (min-width: 768px) {
-    padding: 16px 20px;
-    width: 430px;
-  }
-  &:focus + .formLabel,
-  &:not(:placeholder-shown) + .formLabel {
-    transform: translateY(-90%) scale(0.9);
-    padding-inline: 4px;
-    color: #4a4535ad;
-    background: linear-gradient(
-      to top,
-      var--bg_acent_color 50%,
-      var(--form_bg) 50%
-    );
-
+    width: 300px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #ded8d4;
+    background-color: var(--bg_acent_color);
+    padding: 12px 20px;
     @media screen and (min-width: 768px) {
-      transform: translateY(-103%) scale(0.9);
+        padding: 16px 20px;
+        width: 430px;
     }
-  }
+    &:focus + .formLabel,
+    &:not(:placeholder-shown) + .formLabel {
+        transform: translateY(-90%) scale(0.9);
+        padding-inline: 4px;
+        color: #4a4535ad;
+        background: linear-gradient(
+            to top,
+            var--bg_acent_color 50%,
+            var(--form_bg) 50%
+        );
+
+        @media screen and (min-width: 768px) {
+            transform: translateY(-103%) scale(0.9);
+        }
+    }
 }
 
 .formInputTextarea {
-  height: 120px;
-  margin-bottom: 20px;
-  resize: none;
+    height: 120px;
+    margin-bottom: 20px;
+    resize: none;
 }
 
 .formButton {
-  width: 300px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  padding: 12px 62px;
-  background-color: var(--text_color);
-  border-radius: 30px;
-  color: var(--light_acсent_color);
-  font-weight: inherit;
+    width: 300px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px 62px;
+    background-color: var(--text_color);
+    border-radius: 30px;
+    color: var(--light_acсent_color);
+    font-weight: inherit;
 
-  @media screen and (min-width: 768px) {
-    padding: 16px 62px;
-    width: 200px;
-  }
-  &:hover,
-  &:focus {
-    background-color: var(--bg_acent_color);
-    color: #4a4535;
-  }
+    @media screen and (min-width: 768px) {
+        padding: 16px 62px;
+        width: 200px;
+    }
+    &:hover,
+    &:focus {
+        background-color: var(--bg_acent_color);
+        color: #4a4535;
+    }
+}
+
+.error {
+    position: absolute;
+    top: -17px;
+    right: 10px;
+    color: red;
+    font-size: 14px;
 }

@@ -1,26 +1,5 @@
+import { socialLinks } from '@/data/socialLinks';
 import styles from './SocialLinks.module.scss';
-import { v4 } from 'uuid';
-
-const socialLinks = [
-  {
-    id: 1,
-    title: 'instagram',
-    url: '#icon-instagram',
-    path: 'https://www.instagram.com/webevery.dev/',
-  },
-  {
-    id: 2,
-    title: 'telegram',
-    url: '#icon-telegram',
-    path: 'https://t.me/Webevery',
-  },
-  {
-    id: 3,
-    title: 'facebook',
-    url: '#icon-facebook',
-    path: 'https://www.facebook.com/profile.php?id=100092267193984',
-  },
-];
 
 const SocialLinks = ({ costumeStyles }) => {
   return (

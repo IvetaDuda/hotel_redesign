@@ -25,18 +25,6 @@ const Services = () => {
     ? styles.servicesTextHidden + ' ' + styles.servicesText
     : styles.activeText + ' ' + styles.servicesText;
 
-  // const handleButtonClick = () => {
-  //   if (swiperRef.current && swiperRef.current.swiper) {
-  //     swiperRef.current.swiper.autoplay.stop();
-  //   }
-  // };
-
-  // const handleButtonBlur = () => {
-  //   if (swiperRef.current && swiperRef.current.swiper) {
-  //     swiperRef.current.swiper.autoplay.start();
-  //   }
-  // };
-
   return (
     <section className={styles.container} id="services">
       <Swiper
@@ -50,7 +38,6 @@ const Services = () => {
         }}
         effect="slide"
         modules={[Pagination, Autoplay]}
-        // className="mySwiper"
       >
         {offers.map(({ id, img, title, text }) => (
           <SwiperSlide className={styles.servicesItem} key={id}>
@@ -74,14 +61,6 @@ const Services = () => {
                   <use href="sprite.svg#icon-chevron-down" />
                 </svg>
               </Link>
-              {/* <button
-                type="button"
-                className={styles.servicesBtn}
-                onClick={() => handleButtonClick()}
-                onBlur={handleButtonBlur}
-              >
-                Детальніше
-              </button> */}
             </div>
           </SwiperSlide>
         ))}

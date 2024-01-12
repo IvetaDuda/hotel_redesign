@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './Contacts.module.scss';
 import Form from '@/sections/Form/Form';
-import TelEmail from '@/components/TelEmail/TelEmail';
+import TelEmail from '@/components/ContactsLink/ContactsLink';
 const Contacts = () => {
   return (
     <section id="contacts" className={styles.container}>

@@ -3,7 +3,7 @@ import React from 'react';
 import Form from '../../sections/Form/Form';
 import HeaderLinks from '../Header/HeaderLinks/HeaderLinks';
 import SocialLinks from '../SocialLinks/SocialLinks';
-import TelEmail from '../TelEmail/TelEmail';
+import TelEmail from '../ContactsLink/ContactsLink';
 import styles from './Footer.module.scss';
 
 const Footer = () => {

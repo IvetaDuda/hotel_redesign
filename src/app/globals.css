@@ -7,6 +7,7 @@
   --light_acсent_color: #ffffff;
   --contact_bg: #e6e5e0;
   --form_bg: #e7e5e0;
+  --form-text_error: #e94a3f;
 }
 
 * {

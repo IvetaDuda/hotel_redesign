@@ -8,11 +8,11 @@ const Hero = () => {
   return (
     <section className={styles.hero} id="hero">
       <h1 className={styles.heroTitle}>MAGIC PLACE</h1>
-      <p className={styles.description}>
+      {/* <p className={styles.description}>
         Дозвольте собі відпочинок у спокої та гармонії серед захоплюючого
         гірського пейзажу, де кожна відпустка - це незабутня подорожжю до
         природи.
-      </p>
+      </p> */}
       <Link
         className={styles.heroArrow}
         href="#about"

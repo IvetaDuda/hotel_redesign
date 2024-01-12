@@ -52,10 +52,19 @@
   -webkit-box-pack: justify;
   justify-content: flex-end;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: burgerMenu 1.5s 0.5s linear forwards;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
+@keyframes burgerMenu {
+  to {
+    opacity: 1;
+  }
+}
+
 .burgerMenuContainerOpen {
   position: fixed;
   right: 0;
@@ -81,6 +90,9 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+
+  opacity: 0;
+  animation: burgerMenu 1.5s 0.5s linear forwards;
 
   @media screen and (min-width: 768px) {
     display: none;

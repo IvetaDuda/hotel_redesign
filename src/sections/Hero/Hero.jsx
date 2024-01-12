@@ -13,7 +13,12 @@ const Hero = () => {
         гірського пейзажу, де кожна відпустка - це незабутня подорожжю до
         природи.
       </p>
-      <Link className={styles.heroArrow} href="#about" onClick={handleScroll}>
+      <Link
+        className={styles.heroArrow}
+        href="#about"
+        onClick={handleScroll}
+        title="посилання на секцію про нас"
+      >
         <svg className={styles.heroArrowSvg}>
           <use href="sprite.svg#icon-chevron-down" />
         </svg>

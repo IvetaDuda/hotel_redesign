@@ -24,7 +24,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 26px;
   background-color: var(--form_bg);
   padding: 60px 0px;
   @media screen and (min-width: 768px) {
@@ -47,6 +47,10 @@
 
 .inputGroup {
   position: relative;
+
+  &:nth-child(5) {
+    margin-bottom: 30px;
+  }
 }
 
 .formLabel {
@@ -68,9 +72,8 @@
   border-radius: 30px;
   border: 1px solid #ded8d4;
   background-color: var(--bg_acent_color);
-  padding: 12px 20px;
+  padding: 16px 20px;
   @media screen and (min-width: 768px) {
-    padding: 16px 20px;
     width: 430px;
   }
   &:focus + .formLabel,
@@ -92,7 +95,6 @@
 
 .formInputTextarea {
   height: 120px;
-  margin-bottom: 20px;
   resize: none;
 }
 
@@ -101,14 +103,14 @@
   cursor: pointer;
   border: none;
   outline: none;
-  padding: 12px 62px;
+  padding: 16px 0px;
   background-color: var(--text_color);
   border-radius: 30px;
   color: var(--light_acсent_color);
   font-weight: inherit;
 
   @media screen and (min-width: 768px) {
-    padding: 16px 62px;
+    padding: 16px 0px;
     width: 200px;
   }
   &:hover,
@@ -120,8 +122,8 @@
 
 .error {
   position: absolute;
-  top: -17px;
-  right: 10px;
+  bottom: -23px;
+  left: 16px;
   color: var(--form-text_error);
   font-size: 14px;
 }

@@ -47,7 +47,8 @@ const Services = () => {
               alt="img"
               className={styles.img}
               sizes="100vw"
-              loading="lazy"
+              // loading="lazy"
+              priority="true"
             />
             <div className={styles.servicesContent}>
               <h3 className={styles.servicesSubitle}>{title}</h3>

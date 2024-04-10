@@ -60,6 +60,7 @@
     );
     left: inherit;
     right: 0;
+    z-index: 1;
   }
   @media screen and (min-width: 768px) {
     -webkit-box-align: center;
@@ -130,7 +131,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   object-position: 70% 50%;
-  z-index: -2;
+  // z-index: -2;
   @media screen and (min-width: 768px) {
     object-position: center center;
   }
@@ -177,7 +178,6 @@
     margin-bottom: 30px;
   }
 }
-
 
 .activeText {
   -webkit-line-clamp: auto;
